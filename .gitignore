@@ -1,0 +1,54 @@
+# ============================================
+# Root .gitignore for Vaidra Project
+# ============================================
+
+# Flutter SDK (DO NOT COMMIT - 14,000+ files)
+flutter/
+
+# Python virtual environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+*.egg
+
+# Backend uploads (user-generated content)
+uploads/
+*.db
+*.sqlite3
+
+# Environment variables & secrets - NEVER COMMIT
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# Build artifacts
+build/
+*.apk
+*.aab
+*.ipa
+
+# Logs
+*.log
+gemini_pil_debug.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.user
+
+# Android signing keys
+*.jks
+*.keystore
+key.properties
