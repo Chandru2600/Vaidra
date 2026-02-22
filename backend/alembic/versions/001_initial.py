@@ -6,7 +6,7 @@ Create Date: 2026-02-22
 """
 from alembic import op
 import sqlalchemy as sa
-from sqlalchemy import inspect, text
+from sqlalchemy import inspect
 
 revision = '001_initial'
 down_revision = None
@@ -19,7 +19,7 @@ def upgrade() -> None:
     inspector = inspect(bind)
     existing_tables = inspector.get_table_names()
 
-    # Create users table (only if it doesn't exist)
+    # Create users table (skip if already exists)
     if 'users' not in existing_tables:
         op.create_table(
             'users',
@@ -41,16 +41,8 @@ def upgrade() -> None:
         op.create_index('ix_users_email', 'users', ['email'], unique=True)
         op.create_index('ix_users_id', 'users', ['id'], unique=False)
 
-    # Create severity enum type safely (DO block handles duplicate gracefully)
-    bind.execute(text("""
-        DO $$ BEGIN
-            CREATE TYPE severity AS ENUM ('MINOR', 'MODERATE', 'URGENT');
-        EXCEPTION
-            WHEN duplicate_object THEN NULL;
-        END $$;
-    """))
-
-    # Create scans table (only if it doesn't exist)
+    # Create scans table (skip if already exists)
+    # severity stored as String (MINOR/MODERATE/URGENT) — avoids PostgreSQL ENUM type issues
     if 'scans' not in existing_tables:
         op.create_table(
             'scans',
@@ -60,7 +52,7 @@ def upgrade() -> None:
             sa.Column('s3_key', sa.String(), nullable=True),
             sa.Column('condition', sa.String(), nullable=True),
             sa.Column('confidence', sa.Float(), nullable=True),
-            sa.Column('severity', sa.Enum('MINOR', 'MODERATE', 'URGENT', name='severity', create_type=False), nullable=True),
+            sa.Column('severity', sa.String(), nullable=True),
             sa.Column('steps', sa.Text(), nullable=True),
             sa.Column('warnings', sa.Text(), nullable=True),
             sa.Column('notes', sa.Text(), nullable=True),
@@ -75,4 +67,3 @@ def upgrade() -> None:
 def downgrade() -> None:
     op.drop_table('scans')
     op.drop_table('users')
-    op.execute("DROP TYPE IF EXISTS severity")

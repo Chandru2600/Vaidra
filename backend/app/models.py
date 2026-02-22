@@ -1,13 +1,9 @@
-from sqlalchemy import Column, Integer, String, Float, DateTime, Enum as SQLAEnum, ForeignKey, Text
+from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey, Text
 from sqlalchemy.sql import func
 from app.db import Base
-import enum
 from sqlalchemy.orm import relationship
 
-class Severity(enum.Enum):
-    MINOR = "MINOR"
-    MODERATE = "MODERATE"
-    URGENT = "URGENT"
+# Severity values: MINOR, MODERATE, URGENT (stored as plain String to avoid PostgreSQL ENUM issues)
 
 class User(Base):
     __tablename__ = "users"
@@ -40,7 +36,7 @@ class Scan(Base):
     s3_key = Column(String, nullable=True)
     condition = Column(String, nullable=True)
     confidence = Column(Float, nullable=True)
-    severity = Column(SQLAEnum(Severity), nullable=True)
+    severity = Column(String, nullable=True)  # MINOR / MODERATE / URGENT
     steps = Column(Text, nullable=True)    # pipe-separated
     warnings = Column(Text, nullable=True) # pipe-separated
     notes = Column(Text, nullable=True)
