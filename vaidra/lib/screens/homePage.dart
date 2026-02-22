@@ -235,7 +235,6 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildUploadingScreen(LanguageProvider lang) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Center(
       child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Container(width: 100, height: 100, decoration: BoxDecoration(color: lightGreen.withOpacity(0.3), shape: BoxShape.circle),
@@ -252,7 +251,6 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildMainContent(LanguageProvider lang) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
     return SingleChildScrollView(
       padding: const EdgeInsets.all(20),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [

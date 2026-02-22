@@ -39,11 +39,7 @@ class _WelcomePageState extends State<WelcomePage> with TickerProviderStateMixin
     _slideController.dispose();
     super.dispose();
   }
-  @override
-  Widget build(BuildContext context) {
-    final themeInstance = Theme.of(context);
-    return Consumer<LanguageProvider>(
-      builder: (context, lang, _) {
+
         final isDark = themeInstance.brightness == Brightness.dark;
         if (lang.isLoading) {
           return Scaffold(

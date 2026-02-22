@@ -1,0 +1,1808 @@
+﻿[ +274 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[   +1 ms] executing: [c:\Users\chand\Downloads\Vaidra\flutter/] git -c log.showSignature=false log HEAD -n 1 --pretty=format:%ad --date=iso
+[  +79 ms] Exit code 0 from: git -c log.showSignature=false log HEAD -n 1 --pretty=format:%ad --date=iso
+[        ] 2026-01-28 13:43:12 -0800
+[  +17 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +3 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +47 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[  +81 ms] Skipping pub get: version match.
+[  +99 ms] Found plugin url_launcher at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher-6.3.2\
+[   +9 ms] Found plugin url_launcher_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_windows-3.1.4\
+[  +14 ms] Found plugin url_launcher_web at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_web-2.4.1\
+[  +10 ms] Found plugin url_launcher_macos at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_macos-3.2.2\
+[   +5 ms] Found plugin url_launcher_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_linux-3.2.1\
+[  +12 ms] Found plugin url_launcher_ios at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_ios-6.3.3\
+[   +6 ms] Found plugin url_launcher_android at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.17\
+[   +4 ms] Found plugin shared_preferences at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences-2.5.4\
+[   +3 ms] Found plugin shared_preferences_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_windows-2.4.1\
+[   +6 ms] Found plugin path_provider_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_windows-2.3.0\
+[  +21 ms] Found plugin shared_preferences_web at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_web-2.4.3\
+[   +4 ms] Found plugin shared_preferences_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_linux-2.4.1\
+[   +5 ms] Found plugin path_provider_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_linux-2.2.1\
+[   +7 ms] Found plugin shared_preferences_foundation at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_foundation-2.5.4\
+[   +3 ms] Found plugin shared_preferences_android at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.11\
+[  +12 ms] Found plugin image_picker at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker-1.1.2\
+[   +3 ms] Found plugin image_picker_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_windows-0.2.1+1\
+[  +14 ms] Found plugin file_selector_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\file_selector_windows-0.9.3+4\
+[   +4 ms] Found plugin image_picker_macos at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_macos-0.2.1+2\
+[   +2 ms] Found plugin file_selector_macos at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\file_selector_macos-0.9.4+3\
+[   +2 ms] Found plugin image_picker_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_linux-0.2.1+2\
+[   +2 ms] Found plugin file_selector_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\file_selector_linux-0.9.3+2\
+[   +2 ms] Found plugin image_picker_ios at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_ios-0.8.12+2\
+[   +2 ms] Found plugin image_picker_for_web at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_for_web-3.0.6\
+[   +3 ms] Found plugin image_picker_android at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+25\
+[   +2 ms] Found plugin flutter_plugin_android_lifecycle at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.29\
+[  +96 ms] Found plugin url_launcher at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher-6.3.2\
+[   +4 ms] Found plugin url_launcher_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_windows-3.1.4\
+[   +8 ms] Found plugin url_launcher_web at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_web-2.4.1\
+[   +7 ms] Found plugin url_launcher_macos at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_macos-3.2.2\
+[   +2 ms] Found plugin url_launcher_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_linux-3.2.1\
+[   +2 ms] Found plugin url_launcher_ios at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_ios-6.3.3\
+[   +2 ms] Found plugin url_launcher_android at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.17\
+[   +2 ms] Found plugin shared_preferences at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences-2.5.4\
+[   +3 ms] Found plugin shared_preferences_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_windows-2.4.1\
+[   +4 ms] Found plugin path_provider_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_windows-2.3.0\
+[   +9 ms] Found plugin shared_preferences_web at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_web-2.4.3\
+[   +2 ms] Found plugin shared_preferences_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_linux-2.4.1\
+[   +2 ms] Found plugin path_provider_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_linux-2.2.1\
+[   +4 ms] Found plugin shared_preferences_foundation at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_foundation-2.5.4\
+[   +2 ms] Found plugin shared_preferences_android at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.11\
+[   +6 ms] Found plugin image_picker at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker-1.1.2\
+[   +2 ms] Found plugin image_picker_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_windows-0.2.1+1\
+[  +11 ms] Found plugin file_selector_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\file_selector_windows-0.9.3+4\
+[   +4 ms] Found plugin image_picker_macos at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_macos-0.2.1+2\
+[   +2 ms] Found plugin file_selector_macos at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\file_selector_macos-0.9.4+3\
+[   +2 ms] Found plugin image_picker_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_linux-0.2.1+2\
+[   +2 ms] Found plugin file_selector_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\file_selector_linux-0.9.3+2\
+[   +2 ms] Found plugin image_picker_ios at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_ios-0.8.12+2\
+[   +3 ms] Found plugin image_picker_for_web at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_for_web-3.0.6\
+[   +3 ms] Found plugin image_picker_android at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+25\
+[   +2 ms] Found plugin flutter_plugin_android_lifecycle at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.29\
+[  +29 ms] Skipping generating web_plugin_registrant.dart because it is up-to-date.
+[  +61 ms] Found plugin url_launcher at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher-6.3.2\
+[   +2 ms] Found plugin url_launcher_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_windows-3.1.4\
+[   +8 ms] Found plugin url_launcher_web at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_web-2.4.1\
+[   +7 ms] Found plugin url_launcher_macos at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_macos-3.2.2\
+[   +2 ms] Found plugin url_launcher_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_linux-3.2.1\
+[   +3 ms] Found plugin url_launcher_ios at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_ios-6.3.3\
+[   +2 ms] Found plugin url_launcher_android at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.17\
+[   +2 ms] Found plugin shared_preferences at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences-2.5.4\
+[   +3 ms] Found plugin shared_preferences_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_windows-2.4.1\
+[   +4 ms] Found plugin path_provider_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_windows-2.3.0\
+[  +10 ms] Found plugin shared_preferences_web at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_web-2.4.3\
+[   +2 ms] Found plugin shared_preferences_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_linux-2.4.1\
+[   +2 ms] Found plugin path_provider_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_linux-2.2.1\
+[   +3 ms] Found plugin shared_preferences_foundation at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_foundation-2.5.4\
+[   +1 ms] Found plugin shared_preferences_android at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.11\
+[   +4 ms] Found plugin image_picker at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker-1.1.2\
+[   +1 ms] Found plugin image_picker_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_windows-0.2.1+1\
+[  +10 ms] Found plugin file_selector_windows at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\file_selector_windows-0.9.3+4\
+[   +4 ms] Found plugin image_picker_macos at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_macos-0.2.1+2\
+[   +3 ms] Found plugin file_selector_macos at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\file_selector_macos-0.9.4+3\
+[   +2 ms] Found plugin image_picker_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_linux-0.2.1+2\
+[   +2 ms] Found plugin file_selector_linux at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\file_selector_linux-0.9.3+2\
+[   +2 ms] Found plugin image_picker_ios at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_ios-0.8.12+2\
+[   +2 ms] Found plugin image_picker_for_web at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_for_web-3.0.6\
+[   +4 ms] Found plugin image_picker_android at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+25\
+[   +2 ms] Found plugin flutter_plugin_android_lifecycle at C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.29\
+[  +16 ms] Generating C:\Users\chand\Downloads\Vaidra\vaidra\android\app\src\main\java\io\flutter\plugins\GeneratedPluginRegistrant.java
+[   +3 ms] Skipping generating GeneratedPluginRegistrant.java because it is up-to-date.
+[   +9 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[   +3 ms] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[   +3 ms] Skipping generating generated_plugins.cmake because it is up-to-date.
+[   +4 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[   +2 ms] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[   +3 ms] Skipping generating generated_plugins.cmake because it is up-to-date.
+[   +4 ms] Skipping generating GeneratedPluginRegistrant.h because it is up-to-date.
+[   +3 ms] Skipping generating GeneratedPluginRegistrant.m because it is up-to-date.
+[   +3 ms] Skipping generating GeneratedPluginRegistrant.swift because it is up-to-date.
+[  +82 ms] executing: C:\Program Files\Android\Android Studio\jbr\bin\java -version
+[ +179 ms] Exit code 0 from: C:\Program Files\Android\Android Studio\jbr\bin\java -version
+[        ] openjdk version "21.0.6" 2025-01-21
+           OpenJDK Runtime Environment (build 21.0.6+-13368085-b895.109)
+           OpenJDK 64-Bit Server VM (build 21.0.6+-13368085-b895.109, mixed mode)
+[   +2 ms] executing: C:\Program Files\Android\Android Studio\jbr\bin\java -version
+[ +185 ms] Exit code 0 from: C:\Program Files\Android\Android Studio\jbr\bin\java -version
+[        ] openjdk version "21.0.6" 2025-01-21
+           OpenJDK Runtime Environment (build 21.0.6+-13368085-b895.109)
+           OpenJDK 64-Bit Server VM (build 21.0.6+-13368085-b895.109, mixed mode)
+[   +3 ms] executing: C:\Program Files\Android\Android Studio\jbr\bin\java -version
+[ +203 ms] Exit code 0 from: C:\Program Files\Android\Android Studio\jbr\bin\java -version
+[        ] openjdk version "21.0.6" 2025-01-21
+           OpenJDK Runtime Environment (build 21.0.6+-13368085-b895.109)
+           OpenJDK 64-Bit Server VM (build 21.0.6+-13368085-b895.109, mixed mode)
+[  +16 ms] Top-level Gradle build file not found, skipping migration of task "clean".
+[   +2 ms] executing: C:\Program Files\Android\Android Studio\jbr\bin\java --version
+[ +191 ms] Exit code 0 from: C:\Program Files\Android\Android Studio\jbr\bin\java --version
+[        ] openjdk 21.0.6 2025-01-21
+           OpenJDK Runtime Environment (build 21.0.6+-13368085-b895.109)
+           OpenJDK 64-Bit Server VM (build 21.0.6+-13368085-b895.109, mixed mode)
+[   +3 ms] Version of Java is different than impacted version, no migration attempted.
+[  +22 ms] CMake project not found, skipping support Android 15 16k page size migration.
+[   +4 ms] Using gradle from C:\Users\chand\Downloads\Vaidra\vaidra\android\gradlew.bat.
+[  +10 ms] LocalFile: 'C:\Users\chand\Downloads\Vaidra\vaidra\android\build.gradle.kts' doesn't provide an AGP version. Checking settings.
+[   +1 ms] LocalFile: 'C:\Users\chand\Downloads\Vaidra\vaidra\android\settings.gradle.kts' provides AGP version: 8.7.3
+[   +4 ms] Running Gradle task 'bundleRelease'...
+[        ] executing: [C:\Users\chand\Downloads\Vaidra\vaidra\android/] C:\Users\chand\Downloads\Vaidra\vaidra\android\gradlew.bat --full-stacktrace --info -Pverbose=true -Ptarget-platform=android-arm,android-arm64,android-x64 -Ptarget=lib\main.dart -Pbase-application-name=android.app.Application -Pdart-defines=RkxVVFRFUl9WRVJTSU9OPTMuMzguOQ==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049NjczMjNkZTI4NQ==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049NTg3YzE4Zjg3Mw==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMC44 -Pdart-obfuscation=false -Ptrack-widget-creation=true -Ptree-shake-icons=true bundleRelease
+[ +970 ms] Initialized native services in: C:\Users\chand\.gradle\native
+[   +1 ms] Initialized jansi services in: C:\Users\chand\.gradle\native
+[ +412 ms] Found daemon DaemonInfo{pid=20828, address=[3d9ae02f-e7eb-4192-bddf-12b03fa205ec port:52225, addresses:[/127.0.0.1]], state=Idle, lastBusy=1742896394352, context=DefaultDaemonContext[uid=7b378ae7-db09-44ca-85d1-00fc27311bd0,javaHome=C:\Program Files\Microsoft\jdk-17.0.14.7-hotspot,javaVersion=17,javaVendor=Microsoft,daemonRegistryDir=C:\Users\chand\.gradle\daemon,pid=20828,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=512m,-Xmx2048m,-Dfile.encoding=windows-1252,-Duser.country=IN,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+[        ] JVM is incompatible.
+[        ] Wanted: DaemonRequestContext{jvmCriteria=C:\Program Files\Android\Android Studio\jbr (no JDK specified, using current Java home), daemonOpts=[-XX:MaxMetaspaceSize=4G, -XX:ReservedCodeCacheSize=512m, -XX:+HeapDumpOnOutOfMemoryError, -Xmx8G, -Dfile.encoding=UTF-8, -Duser.country=IN, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+[        ] Actual: DefaultDaemonContext[uid=7b378ae7-db09-44ca-85d1-00fc27311bd0,javaHome=C:\Program Files\Microsoft\jdk-17.0.14.7-hotspot,javaVersion=17,javaVendor=Microsoft,daemonRegistryDir=C:\Users\chand\.gradle\daemon,pid=20828,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=512m,-Xmx2048m,-Dfile.encoding=windows-1252,-Duser.country=IN,-Duser.language=en,-Duser.variant]
+[        ]   Looking for a different daemon...
+[        ] Found daemon DaemonInfo{pid=5256, address=[22187a56-c2d4-4ba8-b55b-ebb389a931af port:53922, addresses:[/127.0.0.1]], state=Idle, lastBusy=1771753902444, context=DefaultDaemonContext[uid=229ac73b-8d10-46be-a180-15d9fc285443,javaHome=C:\Program Files\Microsoft\jdk-17.0.14.7-hotspot,javaVersion=17,javaVendor=Microsoft,daemonRegistryDir=C:\Users\chand\.gradle\daemon,pid=5256,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx8G,-Dfile.encoding=windows-1252,-Duser.country=IN,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+[        ] JVM is incompatible.
+[        ] Wanted: DaemonRequestContext{jvmCriteria=C:\Program Files\Android\Android Studio\jbr (no JDK specified, using current Java home), daemonOpts=[-XX:MaxMetaspaceSize=4G, -XX:ReservedCodeCacheSize=512m, -XX:+HeapDumpOnOutOfMemoryError, -Xmx8G, -Dfile.encoding=UTF-8, -Duser.country=IN, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+[        ] Actual: DefaultDaemonContext[uid=229ac73b-8d10-46be-a180-15d9fc285443,javaHome=C:\Program Files\Microsoft\jdk-17.0.14.7-hotspot,javaVersion=17,javaVendor=Microsoft,daemonRegistryDir=C:\Users\chand\.gradle\daemon,pid=5256,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx8G,-Dfile.encoding=windows-1252,-Duser.country=IN,-Duser.language=en,-Duser.variant]
+[        ]   Looking for a different daemon...
+[ +104 ms] The client will now receive all logging from the daemon (pid: 8364). The daemon log file: C:\Users\chand\.gradle\daemon\8.12\daemon-8364.out.log
+[        ] Starting 3rd build in daemon [uptime: 4 mins 16.291 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 8 GiB, non-heap usage: 5% of 4 GiB]
+[        ] Using 12 worker leases.
+[        ] Now considering [C:\Users\chand\Downloads\Vaidra\vaidra\android, C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle] as hierarchies to watch
+[        ] Watching the file system is configured to be enabled if available
+[        ] File system watching is active
+[        ] Starting Build
+[        ] Now considering [C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle, C:\Users\chand\Downloads\Vaidra\vaidra\android] as hierarchies to watch
+[ +200 ms] > Configure project :gradle
+[        ] Evaluating project ':gradle' using build file 'C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\build.gradle.kts'.
+[        ] Resolved plugin [id: 'org.gradle.java-gradle-plugin']
+[        ] Resolved plugin [id: 'org.gradle.groovy']
+[        ] Resolved plugin [id: 'org.gradle.kotlin.kotlin-dsl', version: '5.1.2']
+[        ] Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '1.9.20']
+[        ] Using Kotlin Gradle Plugin gradle85 variant
+[        ] kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+[        ] kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+[        ] file or directory 'C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\java', not found
+[        ] Resolved plugin [id: 'dev.flutter.flutter-plugin-loader', version: '1.0.0']
+[        ] Resolved plugin [id: 'com.android.application', version: '8.7.3', apply: false]
+[        ] Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.1.0', apply: false]
+[        ] Resolve mutations for :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] > Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':gradle:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[        ] Resolve mutations for :gradle:compileKotlin (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] :gradle:compileKotlin (Thread[#470,Execution worker Thread 2,5,main]) started.
+[  +86 ms] > Task :gradle:compileKotlin UP-TO-DATE
+[        ] Caching disabled for task ':gradle:compileKotlin' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':gradle:compileKotlin' as it is up-to-date.
+[        ] Resolve mutations for :gradle:compileJava (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] :gradle:compileJava (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] > Task :gradle:compileJava NO-SOURCE
+[        ] Skipping task ':gradle:compileJava' as it has no source files and no previous output files.
+[        ] Resolve mutations for :gradle:compileGroovy (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] :gradle:compileGroovy (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] > Task :gradle:compileGroovy NO-SOURCE
+[        ] Skipping task ':gradle:compileGroovy' as it has no source files and no previous output files.
+[        ] Resolve mutations for :gradle:pluginDescriptors (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] :gradle:pluginDescriptors (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] > Task :gradle:pluginDescriptors UP-TO-DATE
+[        ] Caching disabled for task ':gradle:pluginDescriptors' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:pluginDescriptors' as it is up-to-date.
+[        ] Resolve mutations for :gradle:processResources (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] :gradle:processResources (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] > Task :gradle:processResources UP-TO-DATE
+[        ] Caching disabled for task ':gradle:processResources' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:processResources' as it is up-to-date.
+[        ] Resolve mutations for :gradle:classes (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] :gradle:classes (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] > Task :gradle:classes UP-TO-DATE
+[        ] Skipping task ':gradle:classes' as it has no actions.
+[        ] Resolve mutations for :gradle:jar (Thread[#470,Execution worker Thread 2,5,main]) started.
+[        ] :gradle:jar (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] > Task :gradle:jar UP-TO-DATE
+[        ] Caching disabled for task ':gradle:jar' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:jar' as it is up-to-date.
+[  +98 ms] Settings evaluated using settings file 'C:\Users\chand\Downloads\Vaidra\vaidra\android\settings.gradle.kts'.
+[        ] Projects loaded. Root project using build file 'C:\Users\chand\Downloads\Vaidra\vaidra\android\build.gradle.kts'.
+[        ] Included projects: [root project 'android', project ':app', project ':flutter_plugin_android_lifecycle', project ':image_picker_android', project ':shared_preferences_android', project ':url_launcher_android']
+[ +294 ms] > Configure project :app
+[        ] Evaluating project ':app' using build file 'C:\Users\chand\Downloads\Vaidra\vaidra\android\app\build.gradle.kts'.
+[        ] Resolved plugin [id: 'com.android.application']
+[        ] Resolved plugin [id: 'kotlin-android']
+[        ] Resolved plugin [id: 'dev.flutter.flutter-gradle-plugin']
+[        ] Using default execution profile
+[        ] Using Kotlin Gradle Plugin gradle85 variant
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is C:\Users\chand\AppData\Local\Android\sdk
+[        ] > Configure project :
+[        ] Evaluating root project 'android' using build file 'C:\Users\chand\Downloads\Vaidra\vaidra\android\build.gradle.kts'.
+[  +72 ms] > Configure project :flutter_plugin_android_lifecycle
+[        ] Evaluating project ':flutter_plugin_android_lifecycle' using build file 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.29\android\build.gradle'.
+[        ] Using default execution profile
+[ +107 ms] > Configure project :image_picker_android
+[        ] Evaluating project ':image_picker_android' using build file 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+25\android\build.gradle'.
+[        ] Using default execution profile
+[ +201 ms] > Configure project :shared_preferences_android
+[        ] Evaluating project ':shared_preferences_android' using build file 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.11\android\build.gradle'.
+[        ] Using default execution profile
+[        ] Using Kotlin Gradle Plugin gradle85 variant
+[  +94 ms] > Configure project :url_launcher_android
+[        ] Evaluating project ':url_launcher_android' using build file 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.17\android\build.gradle'.
+[        ] Using default execution profile
+[        ] All projects evaluated.
+[        ] Task name matched 'bundleRelease'
+[        ] Selected primary task 'bundleRelease' from project :
+[  +92 ms] WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 36
+[        ] This Android Gradle plugin (8.7.3) was tested up to compileSdk = 35.
+[        ] You are strongly encouraged to update your project to use a newer
+[        ] Android Gradle plugin that has been tested with compileSdk = 36.
+[        ] If you are already using the latest version of the Android Gradle plugin,
+[        ] you may need to wait until a newer version with support for compileSdk = 36 is available.
+[        ] For more information refer to the compatibility table:
+[        ] https://d.android.com/r/tools/api-level-support
+[        ] To suppress this warning, add/update
+[        ]     android.suppressUnsupportedCompileSdk=36
+[        ] to this project's gradle.properties.
+[ +106 ms] Tasks to be executed: [task ':app:preBuild', task ':app:preReleaseBuild', task ':app:generateReleaseFeatureMetadata', task ':flutter_plugin_android_lifecycle:preBuild', task ':flutter_plugin_android_lifecycle:preReleaseBuild', task ':flutter_plugin_android_lifecycle:generateReleaseResValues', task ':flutter_plugin_android_lifecycle:generateReleaseResources', task ':flutter_plugin_android_lifecycle:packageReleaseResources', task ':flutter_plugin_android_lifecycle:parseReleaseLocalResources', task ':flutter_plugin_android_lifecycle:generateReleaseRFile', task ':flutter_plugin_android_lifecycle:javaPreCompileRelease', task ':flutter_plugin_android_lifecycle:compileReleaseJavaWithJavac', task ':flutter_plugin_android_lifecycle:bundleLibCompileToJarRelease', task ':image_picker_android:preBuild', task ':image_picker_android:preReleaseBuild', task ':image_picker_android:generateReleaseResValues', task ':image_picker_android:generateReleaseResources', task ':image_picker_android:packageReleaseResources', task ':image_picker_android:parseReleaseLocalResources', task ':image_picker_android:generateReleaseRFile', task ':image_picker_android:javaPreCompileRelease', task ':image_picker_android:compileReleaseJavaWithJavac', task ':image_picker_android:mergeReleaseGeneratedProguardFiles', task ':image_picker_android:exportReleaseConsumerProguardFiles', task ':flutter_plugin_android_lifecycle:mergeReleaseGeneratedProguardFiles', task ':flutter_plugin_android_lifecycle:exportReleaseConsumerProguardFiles', task ':shared_preferences_android:checkKotlinGradlePluginConfigurationErrors', task ':shared_preferences_android:preBuild', task ':shared_preferences_android:preReleaseBuild', task ':shared_preferences_android:generateReleaseResValues', task ':shared_preferences_android:generateReleaseResources', task ':shared_preferences_android:packageReleaseResources', task ':shared_preferences_android:parseReleaseLocalResources', task ':shared_preferences_android:generateReleaseRFile', task ':shared_preferences_android:compileReleaseKotlin', task ':shared_preferences_android:javaPreCompileRelease', task ':shared_preferences_android:compileReleaseJavaWithJavac', task ':shared_preferences_android:mergeReleaseGeneratedProguardFiles', task ':shared_preferences_android:exportReleaseConsumerProguardFiles', task ':url_launcher_android:preBuild', task ':url_launcher_android:preReleaseBuild', task ':url_launcher_android:generateReleaseBuildConfig', task ':url_launcher_android:generateReleaseResValues', task ':url_launcher_android:generateReleaseResources', task ':url_launcher_android:packageReleaseResources', task ':url_launcher_android:parseReleaseLocalResources', task ':url_launcher_android:generateReleaseRFile', task ':url_launcher_android:javaPreCompileRelease', task ':url_launcher_android:compileReleaseJavaWithJavac', task ':url_launcher_android:mergeReleaseGeneratedProguardFiles', task ':url_launcher_android:exportReleaseConsumerProguardFiles', task ':app:buildKotlinToolingMetadata', task ':app:compileFlutterBuildRelease', task ':app:packJniLibsflutterBuildRelease', task ':app:checkReleaseDuplicateClasses', task ':app:checkKotlinGradlePluginConfigurationErrors', task ':flutter_plugin_android_lifecycle:writeReleaseAarMetadata', task ':image_picker_android:writeReleaseAarMetadata', task ':shared_preferences_android:writeReleaseAarMetadata', task ':url_launcher_android:writeReleaseAarMetadata', task ':app:checkReleaseAarMetadata', task ':app:cleanMergeReleaseAssets', task ':app:mergeReleaseShaders', task ':app:compileReleaseShaders', task ':app:generateReleaseAssets', task ':flutter_plugin_android_lifecycle:mergeReleaseShaders', task ':flutter_plugin_android_lifecycle:compileReleaseShaders', task ':flutter_plugin_android_lifecycle:generateReleaseAssets', task ':flutter_plugin_android_lifecycle:packageReleaseAssets', task ':image_picker_android:mergeReleaseShaders', task ':image_picker_android:compileReleaseShaders', task ':image_picker_android:generateReleaseAssets', task ':image_picker_android:packageReleaseAssets', task ':shared_preferences_android:mergeReleaseShaders', task ':shared_preferences_android:compileReleaseShaders', task ':shared_preferences_android:generateReleaseAssets', task ':shared_preferences_android:packageReleaseAssets', task ':url_launcher_android:mergeReleaseShaders', task ':url_launcher_android:compileReleaseShaders', task ':url_launcher_android:generateReleaseAssets', task ':url_launcher_android:packageReleaseAssets', task ':app:mergeReleaseAssets', task ':app:copyFlutterAssetsRelease', task ':app:generateReleaseResValues', task ':app:mapReleaseSourceSetPaths', task ':app:generateReleaseResources', task ':app:mergeReleaseResources', task ':app:packageReleaseResources', task ':app:parseReleaseLocalResources', task ':app:createReleaseCompatibleScreenManifests', task ':app:extractDeepLinksRelease', task ':flutter_plugin_android_lifecycle:extractDeepLinksRelease', task ':flutter_plugin_android_lifecycle:processReleaseManifest', task ':image_picker_android:extractDeepLinksRelease', task ':image_picker_android:processReleaseManifest', task ':shared_preferences_android:extractDeepLinksRelease', task ':shared_preferences_android:processReleaseManifest', task ':url_launcher_android:extractDeepLinksRelease', task ':url_launcher_android:processReleaseManifest', task ':app:processReleaseMainManifest', task ':app:outputReleaseAppLinkSettings', task ':app:processReleaseManifest', task ':app:processReleaseManifestForPackage', task ':app:processReleaseResources', task ':image_picker_android:bundleLibCompileToJarRelease', task ':shared_preferences_android:bundleLibCompileToJarRelease', task ':url_launcher_android:bundleLibCompileToJarRelease', task ':app:compileReleaseKotlin', task ':app:javaPreCompileRelease', task ':app:compileReleaseJavaWithJavac', task ':flutter_plugin_android_lifecycle:prepareReleaseArtProfile', task ':image_picker_android:prepareReleaseArtProfile', task ':shared_preferences_android:prepareReleaseArtProfile', task ':url_launcher_android:prepareReleaseArtProfile', task ':app:mergeReleaseArtProfile', task ':flutter_plugin_android_lifecycle:bundleLibRuntimeToJarRelease', task ':image_picker_android:bundleLibRuntimeToJarRelease', task ':shared_preferences_android:bundleLibRuntimeToJarRelease', task ':url_launcher_android:bundleLibRuntimeToJarRelease', task ':app:expandReleaseArtProfileWildcards', task ':app:extractProguardFiles', task ':app:mergeReleaseGeneratedProguardFiles', task ':app:processReleaseJavaRes', task ':flutter_plugin_android_lifecycle:processReleaseJavaRes', task ':image_picker_android:processReleaseJavaRes', task ':shared_preferences_android:processReleaseJavaRes', task ':url_launcher_android:processReleaseJavaRes', task ':app:mergeReleaseJavaResource', task ':app:mergeReleaseStartupProfile', task ':app:minifyReleaseWithR8', task ':app:processApplicationManifestReleaseForBundle', task ':app:bundleReleaseResources', task ':app:extractReleaseVersionControlInfo', task ':app:configureCMakeRelease[arm64-v8a]', task ':app:buildCMakeRelease[arm64-v8a]', task ':app:configureCMakeRelease[armeabi-v7a]', task ':app:buildCMakeRelease[armeabi-v7a]', task ':app:configureCMakeRelease[x86_64]', task ':app:buildCMakeRelease[x86_64]', task ':app:mergeReleaseJniLibFolders', task ':flutter_plugin_android_lifecycle:mergeReleaseJniLibFolders', task ':flutter_plugin_android_lifecycle:mergeReleaseNativeLibs', task ':flutter_plugin_android_lifecycle:copyReleaseJniLibsProjectOnly', task ':image_picker_android:mergeReleaseJniLibFolders', task ':image_picker_android:mergeReleaseNativeLibs', task ':image_picker_android:copyReleaseJniLibsProjectOnly', task ':shared_preferences_android:mergeReleaseJniLibFolders', task ':shared_preferences_android:mergeReleaseNativeLibs', task ':shared_preferences_android:copyReleaseJniLibsProjectOnly', task ':url_launcher_android:mergeReleaseJniLibFolders', task ':url_launcher_android:mergeReleaseNativeLibs', task ':url_launcher_android:copyReleaseJniLibsProjectOnly', task ':app:mergeReleaseNativeLibs', task ':app:stripReleaseDebugSymbols', task ':app:writeReleaseAppMetadata', task ':app:buildReleasePreBundle', task ':app:compileReleaseArtProfile', task ':app:collectReleaseDependencies', task ':app:configureReleaseDependencies', task ':app:extractReleaseNativeSymbolTables', task ':app:parseReleaseIntegrityConfig', task ':app:packageReleaseBundle', task ':app:shrinkBundleReleaseResources', task ':app:validateSigningRelease', task ':app:signReleaseBundle', task ':app:produceReleaseBundleIdeListingFile', task ':app:createReleaseBundleListingFileRedirect', task ':app:bundleRelease']
+[        ] Tasks that were excluded: []
+[        ] work action Parameters of FilterShrinkerRulesTransform (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :app:preBuild (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:preBuild (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:preBuild UP-TO-DATE
+[        ] Skipping task ':app:preBuild' as it has no actions.
+[        ] Resolve mutations for :app:preReleaseBuild (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:preReleaseBuild (Thread[#468,included builds,5,main]) started.
+[        ] > Task :app:preReleaseBuild UP-TO-DATE
+[        ] Skipping task ':app:preReleaseBuild' as it has no actions.
+[        ] Resolve mutations for :app:generateReleaseFeatureMetadata (Thread[#468,included builds,5,main]) started.
+[        ] :app:generateReleaseFeatureMetadata (Thread[#468,included builds,5,main]) started.
+[        ] > Task :app:generateReleaseFeatureMetadata UP-TO-DATE
+[        ] Caching disabled for task ':app:generateReleaseFeatureMetadata' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:generateReleaseFeatureMetadata' as it is up-to-date.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:preBuild (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:preBuild (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:preBuild UP-TO-DATE
+[        ] Skipping task ':flutter_plugin_android_lifecycle:preBuild' as it has no actions.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:preReleaseBuild (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:preReleaseBuild (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:preReleaseBuild UP-TO-DATE
+[        ] Skipping task ':flutter_plugin_android_lifecycle:preReleaseBuild' as it has no actions.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:generateReleaseResValues (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:generateReleaseResValues (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:generateReleaseResValues UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:generateReleaseResValues' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_plugin_android_lifecycle:generateReleaseResValues' as it is up-to-date.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:generateReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:generateReleaseResources (Thread[#468,included builds,5,main]) started.
+[   +2 ms] > Task :flutter_plugin_android_lifecycle:generateReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:generateReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_plugin_android_lifecycle:generateReleaseResources' as it is up-to-date.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:packageReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:packageReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:packageReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:packageReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_plugin_android_lifecycle:packageReleaseResources' as it is up-to-date.
+[        ] work action resolve packageReleaseResources (project :flutter_plugin_android_lifecycle) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:parseReleaseLocalResources (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:parseReleaseLocalResources (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:parseReleaseLocalResources UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:parseReleaseLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_plugin_android_lifecycle:parseReleaseLocalResources' as it is up-to-date.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:generateReleaseRFile (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:generateReleaseRFile (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:generateReleaseRFile UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:generateReleaseRFile' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_plugin_android_lifecycle:generateReleaseRFile' as it is up-to-date.
+[        ] work action resolve package-aware-r.txt (project :flutter_plugin_android_lifecycle) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:javaPreCompileRelease (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:javaPreCompileRelease (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:javaPreCompileRelease UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:javaPreCompileRelease' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_plugin_android_lifecycle:javaPreCompileRelease' as it is up-to-date.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:compileReleaseJavaWithJavac (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:compileReleaseJavaWithJavac (Thread[#468,included builds,5,main]) started.
+[  +76 ms] > Task :flutter_plugin_android_lifecycle:compileReleaseJavaWithJavac UP-TO-DATE
+[        ] Custom actions are attached to task ':flutter_plugin_android_lifecycle:compileReleaseJavaWithJavac'.
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:compileReleaseJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_plugin_android_lifecycle:compileReleaseJavaWithJavac' as it is up-to-date.
+[        ] No compile result for :flutter_plugin_android_lifecycle:compileReleaseJavaWithJavac
+[        ] No compile result for :flutter_plugin_android_lifecycle:compileReleaseJavaWithJavac
+[        ] No compile result for :flutter_plugin_android_lifecycle:compileReleaseJavaWithJavac
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:bundleLibCompileToJarRelease (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:bundleLibCompileToJarRelease (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:bundleLibCompileToJarRelease UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:bundleLibCompileToJarRelease' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_plugin_android_lifecycle:bundleLibCompileToJarRelease' as it is up-to-date.
+[        ] work action resolve classes.jar (project :flutter_plugin_android_lifecycle) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :image_picker_android:preBuild (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:preBuild (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:preBuild UP-TO-DATE
+[        ] Skipping task ':image_picker_android:preBuild' as it has no actions.
+[        ] Resolve mutations for :image_picker_android:preReleaseBuild (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:preReleaseBuild (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:preReleaseBuild UP-TO-DATE
+[        ] Skipping task ':image_picker_android:preReleaseBuild' as it has no actions.
+[        ] Resolve mutations for :image_picker_android:generateReleaseResValues (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:generateReleaseResValues (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:generateReleaseResValues UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:generateReleaseResValues' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':image_picker_android:generateReleaseResValues' as it is up-to-date.
+[        ] Resolve mutations for :image_picker_android:generateReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:generateReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:generateReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:generateReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':image_picker_android:generateReleaseResources' as it is up-to-date.
+[        ] Resolve mutations for :image_picker_android:packageReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:packageReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:packageReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:packageReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':image_picker_android:packageReleaseResources' as it is up-to-date.
+[        ] work action resolve packageReleaseResources (project :image_picker_android) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :image_picker_android:parseReleaseLocalResources (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:parseReleaseLocalResources (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:parseReleaseLocalResources UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:parseReleaseLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':image_picker_android:parseReleaseLocalResources' as it is up-to-date.
+[        ] Resolve mutations for :image_picker_android:generateReleaseRFile (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:generateReleaseRFile (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:generateReleaseRFile UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:generateReleaseRFile' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':image_picker_android:generateReleaseRFile' as it is up-to-date.
+[        ] work action resolve package-aware-r.txt (project :image_picker_android) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :image_picker_android:javaPreCompileRelease (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:javaPreCompileRelease (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:javaPreCompileRelease UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:javaPreCompileRelease' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':image_picker_android:javaPreCompileRelease' as it is up-to-date.
+[        ] Resolve mutations for :image_picker_android:compileReleaseJavaWithJavac (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:compileReleaseJavaWithJavac (Thread[#468,included builds,5,main]) started.
+[  +98 ms] > Task :image_picker_android:compileReleaseJavaWithJavac UP-TO-DATE
+[   +1 ms] Custom actions are attached to task ':image_picker_android:compileReleaseJavaWithJavac'.
+[        ] Caching disabled for task ':image_picker_android:compileReleaseJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':image_picker_android:compileReleaseJavaWithJavac' as it is up-to-date.
+[        ] No compile result for :image_picker_android:compileReleaseJavaWithJavac
+[        ] No compile result for :image_picker_android:compileReleaseJavaWithJavac
+[        ] No compile result for :image_picker_android:compileReleaseJavaWithJavac
+[        ] Resolve mutations for :image_picker_android:mergeReleaseGeneratedProguardFiles (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:mergeReleaseGeneratedProguardFiles (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:mergeReleaseGeneratedProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':image_picker_android:mergeReleaseGeneratedProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :image_picker_android:exportReleaseConsumerProguardFiles (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:exportReleaseConsumerProguardFiles (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:exportReleaseConsumerProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':image_picker_android:exportReleaseConsumerProguardFiles' as it is up-to-date.
+[        ] work action resolve exportReleaseConsumerProguardFiles (project :image_picker_android) (Thread[#468,included builds,5,main]) started.
+[        ] FilterShrinkerRulesTransform (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:mergeReleaseGeneratedProguardFiles (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:mergeReleaseGeneratedProguardFiles (Thread[#473,Execution worker Thread 5,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:mergeReleaseGeneratedProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_plugin_android_lifecycle:mergeReleaseGeneratedProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:exportReleaseConsumerProguardFiles (Thread[#473,Execution worker Thread 5,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:exportReleaseConsumerProguardFiles (Thread[#473,Execution worker Thread 5,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:exportReleaseConsumerProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:exportReleaseConsumerProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':flutter_plugin_android_lifecycle:exportReleaseConsumerProguardFiles' as it is up-to-date.
+[        ] work action resolve exportReleaseConsumerProguardFiles (project :flutter_plugin_android_lifecycle) (Thread[#473,Execution worker Thread 5,5,main]) started.
+[        ] FilterShrinkerRulesTransform (Thread[#473,Execution worker Thread 5,5,main]) started.
+[        ] Resolve mutations for :shared_preferences_android:checkKotlinGradlePluginConfigurationErrors (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:checkKotlinGradlePluginConfigurationErrors (Thread[#468,included builds,5,main]) started.
+[        ] > Task :shared_preferences_android:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':shared_preferences_android:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[        ] Resolve mutations for :shared_preferences_android:preBuild (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:preBuild (Thread[#468,included builds,5,main]) started.
+[        ] > Task :shared_preferences_android:preBuild UP-TO-DATE
+[        ] Skipping task ':shared_preferences_android:preBuild' as it has no actions.
+[        ] Resolve mutations for :shared_preferences_android:preReleaseBuild (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:preReleaseBuild (Thread[#468,included builds,5,main]) started.
+[        ] > Task :shared_preferences_android:preReleaseBuild UP-TO-DATE
+[        ] Skipping task ':shared_preferences_android:preReleaseBuild' as it has no actions.
+[        ] Resolve mutations for :shared_preferences_android:generateReleaseResValues (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:generateReleaseResValues (Thread[#468,included builds,5,main]) started.
+[        ] > Task :shared_preferences_android:generateReleaseResValues UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:generateReleaseResValues' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':shared_preferences_android:generateReleaseResValues' as it is up-to-date.
+[        ] Resolve mutations for :shared_preferences_android:generateReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:generateReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] > Task :shared_preferences_android:generateReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:generateReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':shared_preferences_android:generateReleaseResources' as it is up-to-date.
+[        ] Resolve mutations for :shared_preferences_android:packageReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:packageReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] > Task :shared_preferences_android:packageReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:packageReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':shared_preferences_android:packageReleaseResources' as it is up-to-date.
+[        ] work action resolve packageReleaseResources (project :shared_preferences_android) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :shared_preferences_android:parseReleaseLocalResources (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:parseReleaseLocalResources (Thread[#468,included builds,5,main]) started.
+[        ] > Task :shared_preferences_android:parseReleaseLocalResources UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:parseReleaseLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':shared_preferences_android:parseReleaseLocalResources' as it is up-to-date.
+[        ] Resolve mutations for :shared_preferences_android:generateReleaseRFile (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:generateReleaseRFile (Thread[#468,included builds,5,main]) started.
+[        ] > Task :shared_preferences_android:generateReleaseRFile UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:generateReleaseRFile' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':shared_preferences_android:generateReleaseRFile' as it is up-to-date.
+[        ] work action resolve package-aware-r.txt (project :shared_preferences_android) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :shared_preferences_android:compileReleaseKotlin (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:compileReleaseKotlin (Thread[#476,Execution worker Thread 8,5,main]) started.
+[  +71 ms] > Task :shared_preferences_android:compileReleaseKotlin UP-TO-DATE
+[        ] GradleBuildProject.Builder should not be accessed through AnalyticsConfiguratorService after AnalyticsService is created. Analytics information of this build might be incomplete.
+[        ] Caching disabled for task ':shared_preferences_android:compileReleaseKotlin' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':shared_preferences_android:compileReleaseKotlin' as it is up-to-date.
+[        ] Resolve mutations for :shared_preferences_android:javaPreCompileRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :shared_preferences_android:javaPreCompileRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :shared_preferences_android:javaPreCompileRelease UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:javaPreCompileRelease' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':shared_preferences_android:javaPreCompileRelease' as it is up-to-date.
+[        ] Resolve mutations for :shared_preferences_android:compileReleaseJavaWithJavac (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :shared_preferences_android:compileReleaseJavaWithJavac (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :shared_preferences_android:compileReleaseJavaWithJavac UP-TO-DATE
+[        ] Custom actions are attached to task ':shared_preferences_android:compileReleaseJavaWithJavac'.
+[        ] Caching disabled for task ':shared_preferences_android:compileReleaseJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':shared_preferences_android:compileReleaseJavaWithJavac' as it is up-to-date.
+[        ] No compile result for :shared_preferences_android:compileReleaseJavaWithJavac
+[        ] No compile result for :shared_preferences_android:compileReleaseJavaWithJavac
+[        ] No compile result for :shared_preferences_android:compileReleaseJavaWithJavac
+[        ] Resolve mutations for :shared_preferences_android:mergeReleaseGeneratedProguardFiles (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :shared_preferences_android:mergeReleaseGeneratedProguardFiles (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :shared_preferences_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:mergeReleaseGeneratedProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':shared_preferences_android:mergeReleaseGeneratedProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :shared_preferences_android:exportReleaseConsumerProguardFiles (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :shared_preferences_android:exportReleaseConsumerProguardFiles (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :shared_preferences_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:exportReleaseConsumerProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':shared_preferences_android:exportReleaseConsumerProguardFiles' as it is up-to-date.
+[        ] work action resolve exportReleaseConsumerProguardFiles (project :shared_preferences_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] FilterShrinkerRulesTransform (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :url_launcher_android:preBuild (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :url_launcher_android:preBuild (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :url_launcher_android:preBuild UP-TO-DATE
+[        ] Skipping task ':url_launcher_android:preBuild' as it has no actions.
+[        ] Resolve mutations for :url_launcher_android:preReleaseBuild (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :url_launcher_android:preReleaseBuild (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :url_launcher_android:preReleaseBuild UP-TO-DATE
+[        ] Skipping task ':url_launcher_android:preReleaseBuild' as it has no actions.
+[        ] Resolve mutations for :url_launcher_android:generateReleaseBuildConfig (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :url_launcher_android:generateReleaseBuildConfig (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :url_launcher_android:generateReleaseBuildConfig UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:generateReleaseBuildConfig' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':url_launcher_android:generateReleaseBuildConfig' as it is up-to-date.
+[        ] Resolve mutations for :url_launcher_android:generateReleaseResValues (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :url_launcher_android:generateReleaseResValues (Thread[#479,Execution worker Thread 11,5,main]) started.
+[ +102 ms] > Task :url_launcher_android:generateReleaseResValues UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:generateReleaseResValues' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':url_launcher_android:generateReleaseResValues' as it is up-to-date.
+[        ] Resolve mutations for :url_launcher_android:generateReleaseResources (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :url_launcher_android:generateReleaseResources (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :url_launcher_android:generateReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:generateReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':url_launcher_android:generateReleaseResources' as it is up-to-date.
+[        ] Resolve mutations for :url_launcher_android:packageReleaseResources (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :url_launcher_android:packageReleaseResources (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :url_launcher_android:packageReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:packageReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':url_launcher_android:packageReleaseResources' as it is up-to-date.
+[        ] work action resolve packageReleaseResources (project :url_launcher_android) (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] Resolve mutations for :url_launcher_android:parseReleaseLocalResources (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :url_launcher_android:parseReleaseLocalResources (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :url_launcher_android:parseReleaseLocalResources UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:parseReleaseLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':url_launcher_android:parseReleaseLocalResources' as it is up-to-date.
+[        ] Resolve mutations for :url_launcher_android:generateReleaseRFile (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :url_launcher_android:generateReleaseRFile (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :url_launcher_android:generateReleaseRFile UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:generateReleaseRFile' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':url_launcher_android:generateReleaseRFile' as it is up-to-date.
+[        ] work action resolve package-aware-r.txt (project :url_launcher_android) (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] Resolve mutations for :url_launcher_android:javaPreCompileRelease (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :url_launcher_android:javaPreCompileRelease (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :url_launcher_android:javaPreCompileRelease UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:javaPreCompileRelease' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':url_launcher_android:javaPreCompileRelease' as it is up-to-date.
+[        ] Resolve mutations for :url_launcher_android:compileReleaseJavaWithJavac (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :url_launcher_android:compileReleaseJavaWithJavac (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :url_launcher_android:compileReleaseJavaWithJavac UP-TO-DATE
+[        ] Custom actions are attached to task ':url_launcher_android:compileReleaseJavaWithJavac'.
+[        ] Caching disabled for task ':url_launcher_android:compileReleaseJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':url_launcher_android:compileReleaseJavaWithJavac' as it is up-to-date.
+[        ] No compile result for :url_launcher_android:compileReleaseJavaWithJavac
+[        ] No compile result for :url_launcher_android:compileReleaseJavaWithJavac
+[        ] No compile result for :url_launcher_android:compileReleaseJavaWithJavac
+[        ] Resolve mutations for :url_launcher_android:mergeReleaseGeneratedProguardFiles (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :url_launcher_android:mergeReleaseGeneratedProguardFiles (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :url_launcher_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:mergeReleaseGeneratedProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':url_launcher_android:mergeReleaseGeneratedProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :url_launcher_android:exportReleaseConsumerProguardFiles (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :url_launcher_android:exportReleaseConsumerProguardFiles (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :url_launcher_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:exportReleaseConsumerProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':url_launcher_android:exportReleaseConsumerProguardFiles' as it is up-to-date.
+[        ] work action resolve exportReleaseConsumerProguardFiles (project :url_launcher_android) (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] FilterShrinkerRulesTransform (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] Resolve mutations for :app:buildKotlinToolingMetadata (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:buildKotlinToolingMetadata (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:buildKotlinToolingMetadata UP-TO-DATE
+[        ] Caching disabled for task ':app:buildKotlinToolingMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:buildKotlinToolingMetadata' as it is up-to-date.
+[        ] Resolve mutations for :app:compileFlutterBuildRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:compileFlutterBuildRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[+1986 ms] > Task :app:compileFlutterBuildRelease
+[        ] Caching disabled for task ':app:compileFlutterBuildRelease' because:
+[        ]   Build cache is disabled
+[        ]   Caching has not been enabled for the task
+[        ] Task ':app:compileFlutterBuildRelease' is not up-to-date because:
+[        ]   Value of input property 'verbose' has changed for task ':app:compileFlutterBuildRelease'
+[        ] Starting process 'command 'C:\Users\chand\Downloads\Vaidra\flutter\bin\flutter.bat''. Working directory: C:\Users\chand\Downloads\Vaidra\vaidra Command: C:\Users\chand\Downloads\Vaidra\flutter\bin\flutter.bat --verbose assemble --no-version-check --depfile C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\flutter\release/flutter_build.d --output C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\flutter\release -dTargetFile=lib\main.dart -dTargetPlatform=android -dBuildMode=release -dTrackWidgetCreation=true -dTreeShakeIcons=true --DartDefines=RkxVVFRFUl9WRVJTSU9OPTMuMzguOQ==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049NjczMjNkZTI4NQ==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049NTg3YzE4Zjg3Mw==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMC44 -dFlavor= -dAndroidArchs=android-arm android-arm64 android-x64 -dMinSdkVersion=24 android_aot_bundle_release_android-arm android_aot_bundle_release_android-arm64 android_aot_bundle_release_android-x64
+[        ] Successfully started process 'command 'C:\Users\chand\Downloads\Vaidra\flutter\bin\flutter.bat''
+[        ] [ +336 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [   +1 ms] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[        ] [  +14 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] [   +2 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] [  +64 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] [   +2 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[        ] [  +38 ms] Initializing file store
+[        ] [  +42 ms] Done initializing file store
+[        ] [ +162 ms] Skipping target: gen_dart_plugin_registrant
+[        ] [   +2 ms] Skipping target: dart_build
+[        ] [        ] Skipping target: gen_localizations
+[        ] [   +2 ms] Skipping target: install_code_assets
+[+1789 ms] [+1781 ms] Skipping target: kernel_snapshot_program
+[  +93 ms] [  +78 ms] Skipping target: android_aot_release_android-arm
+[        ] [   +4 ms] invalidated build due to missing files: C:\Users\chand\Downloads\Vaidra\vaidra\DOES_NOT_EXIST_RERUN_FOR_WILDCARD653959192
+[ +205 ms] [ +171 ms] Skipping target: android_aot_release_android-arm64
+[        ] [  +64 ms] Skipping target: android_aot_release_android-x64
+[        ] [   +1 ms] aot_android_asset_bundle: Starting due to {InvalidatedReasonKind.inputMissing: The following inputs were missing: C:\Users\chand\Downloads\Vaidra\vaidra\DOES_NOT_EXIST_RERUN_FOR_WILDCARD653959192}
+[ +295 ms] [ +232 ms] Manifest contained wildcard assets. Inserting missing file into build graph to force rerun. for more information see #56466.
+[        ] [  +25 ms] shaderc command: [C:\Users\chand\Downloads\Vaidra\flutter\bin\cache\artifacts\engine\windows-x64\impellerc.exe, --sksl, --runtime-stage-gles, --runtime-stage-gles3, --runtime-stage-vulkan, --iplr, --sl=C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\flutter\release\flutter_assets\shaders/ink_sparkle.frag, --spirv=C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\flutter\release\flutter_assets\shaders/ink_sparkle.frag.spirv, --input=C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter\lib\src\material\shaders\ink_sparkle.frag, --input-type=frag, --include=C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter\lib\src\material\shaders, --include=C:\Users\chand\Downloads\Vaidra\flutter\bin\cache\artifacts\engine\windows-x64\shader_lib]
+[        ] [   +2 ms] shaderc command: [C:\Users\chand\Downloads\Vaidra\flutter\bin\cache\artifacts\engine\windows-x64\impellerc.exe, --sksl, --runtime-stage-gles, --runtime-stage-gles3, --runtime-stage-vulkan, --iplr, --sl=C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\flutter\release\flutter_assets\shaders/stretch_effect.frag, --spirv=C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\flutter\release\flutter_assets\shaders/stretch_effect.frag.spirv, --input=C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter\lib\src\material\shaders\stretch_effect.frag, --input-type=frag, --include=C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter\lib\src\material\shaders, --include=C:\Users\chand\Downloads\Vaidra\flutter\bin\cache\artifacts\engine\windows-x64\shader_lib]
+[ +107 ms] [  +96 ms] Running command: C:\Users\chand\Downloads\Vaidra\flutter\bin\cache\dart-sdk\bin\dart.exe C:\Users\chand\Downloads\Vaidra\flutter\bin\cache\artifacts\engine\windows-x64\const_finder.dart.snapshot --kernel-file C:\Users\chand\Downloads\Vaidra\vaidra\.dart_tool\flutter_build\2103286d280807f48c3a1be378fbc2a8\app.dill --class-library-uri package:flutter/src/widgets/icon_data.dart --class-name IconData --annotation-class-name _StaticIconProvider --annotation-class-library-uri package:flutter/src/widgets/icon_data.dart
+[ +994 ms] [+1064 ms] Expected to find fontFamily for constant IconData with codepoint: 128842, but found fontFamily: null. This usually means you are relying on the system font. Alternatively, font families in an IconData class can be provided in the assets section of your pubspec.yaml, or you are missing "uses-material-design: true".
+[  +92 ms] [   +3 ms] Running font-subset: C:\Users\chand\Downloads\Vaidra\flutter\bin\cache\artifacts\engine\windows-x64\font-subset.exe C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\flutter\release\flutter_assets\fonts/MaterialIcons-Regular.otf C:\Users\chand\Downloads\Vaidra\flutter\bin\cache\artifacts\material_fonts\MaterialIcons-Regular.otf, using codepoints 57490 62832 57706 58332 57502 57501 57657 57496 57704 57415 58372 57492 58519 57632 61843 61886 62638 58513 58132 58328 57500 57648 57695 58554 62007 57791 58636 58116 58550 58178 57689 58076 58392 57885 58198 58195 58280 58312 58608 58567 58286 59070 59069 59084 57912 61080 59030 57947 61464 61343 58123 62160 61358 58291 58289 57941 58262 984314 57638 58530 63599 58062
+[        ] [  +53 ms] Font asset "MaterialIcons-Regular.otf" was tree-shaken, reducing it from 1645184 to 8164 bytes (99.5% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+[        ] [   +3 ms] aot_android_asset_bundle: Complete
+[ +109 ms] [  +82 ms] Skipping target: android_aot_bundle_release_android-arm
+[        ] [  +55 ms] Skipping target: android_aot_bundle_release_android-arm64
+[  +92 ms] [  +51 ms] Skipping target: android_aot_bundle_release_android-x64
+[        ] [        ] Skipping target: _composite
+[        ] [        ] Persisting file store
+[        ] [  +12 ms] Done persisting file store
+[        ] [  +21 ms] build succeeded.
+[        ] [   +8 ms] "flutter assemble" took 4,150ms.
+[  +95 ms] [  +85 ms] Running 1 shutdown hook
+[        ] [   +1 ms] Shutdown hooks complete
+[ +311 ms] [ +239 ms] exiting with code 0
+[  +92 ms] Resolve mutations for :app:packJniLibsflutterBuildRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:packJniLibsflutterBuildRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[   +1 ms] > Task :app:packJniLibsflutterBuildRelease UP-TO-DATE
+[        ] Caching disabled for task ':app:packJniLibsflutterBuildRelease' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':app:packJniLibsflutterBuildRelease' as it is up-to-date.
+[        ] Resolve mutations for :app:checkReleaseDuplicateClasses (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:checkReleaseDuplicateClasses (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:checkReleaseDuplicateClasses UP-TO-DATE
+[        ] Caching disabled for task ':app:checkReleaseDuplicateClasses' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:checkReleaseDuplicateClasses' as it is up-to-date.
+[        ] Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:checkKotlinGradlePluginConfigurationErrors (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[        ] Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:writeReleaseAarMetadata (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:writeReleaseAarMetadata (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:writeReleaseAarMetadata UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:writeReleaseAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':flutter_plugin_android_lifecycle:writeReleaseAarMetadata' as it is up-to-date.
+[        ] work action resolve aar-metadata.properties (project :flutter_plugin_android_lifecycle) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :image_picker_android:writeReleaseAarMetadata (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :image_picker_android:writeReleaseAarMetadata (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :image_picker_android:writeReleaseAarMetadata UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:writeReleaseAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':image_picker_android:writeReleaseAarMetadata' as it is up-to-date.
+[        ] work action resolve aar-metadata.properties (project :image_picker_android) (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] Resolve mutations for :shared_preferences_android:writeReleaseAarMetadata (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] :shared_preferences_android:writeReleaseAarMetadata (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] > Task :shared_preferences_android:writeReleaseAarMetadata UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:writeReleaseAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':shared_preferences_android:writeReleaseAarMetadata' as it is up-to-date.
+[        ] work action resolve aar-metadata.properties (project :shared_preferences_android) (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] Resolve mutations for :url_launcher_android:writeReleaseAarMetadata (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] :url_launcher_android:writeReleaseAarMetadata (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] > Task :url_launcher_android:writeReleaseAarMetadata UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:writeReleaseAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':url_launcher_android:writeReleaseAarMetadata' as it is up-to-date.
+[        ] work action resolve aar-metadata.properties (project :url_launcher_android) (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] Resolve mutations for :app:checkReleaseAarMetadata (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] :app:checkReleaseAarMetadata (Thread[#477,Execution worker Thread 9,5,main]) started.
+[  +92 ms] > Task :app:checkReleaseAarMetadata UP-TO-DATE
+[        ] Caching disabled for task ':app:checkReleaseAarMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:checkReleaseAarMetadata' as it is up-to-date.
+[        ] Resolve mutations for :app:cleanMergeReleaseAssets (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] :app:cleanMergeReleaseAssets (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] > Task :app:cleanMergeReleaseAssets
+[        ] Caching disabled for task ':app:cleanMergeReleaseAssets' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:cleanMergeReleaseAssets' is not up-to-date because:
+[        ]   Task has not declared any outputs despite executing actions.
+[        ] Resolve mutations for :app:mergeReleaseShaders (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] :app:mergeReleaseShaders (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] > Task :app:mergeReleaseShaders UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeReleaseShaders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':app:mergeReleaseShaders' as it is up-to-date.
+[        ] Resolve mutations for :app:compileReleaseShaders (Thread[#477,Execution worker Thread 9,5,main]) started.
+[        ] :app:compileReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] > Task :app:compileReleaseShaders NO-SOURCE
+[        ] Skipping task ':app:compileReleaseShaders' as it has no source files and no previous output files.
+[        ] Resolve mutations for :app:generateReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] :app:generateReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] > Task :app:generateReleaseAssets UP-TO-DATE
+[        ] Skipping task ':app:generateReleaseAssets' as it has no actions.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:mergeReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:mergeReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:mergeReleaseShaders UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:mergeReleaseShaders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_plugin_android_lifecycle:mergeReleaseShaders' as it is up-to-date.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:compileReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:compileReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:compileReleaseShaders NO-SOURCE
+[        ] Skipping task ':flutter_plugin_android_lifecycle:compileReleaseShaders' as it has no source files and no previous output files.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:generateReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:generateReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:generateReleaseAssets UP-TO-DATE
+[        ] Skipping task ':flutter_plugin_android_lifecycle:generateReleaseAssets' as it has no actions.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:packageReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:packageReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:packageReleaseAssets UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:packageReleaseAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_plugin_android_lifecycle:packageReleaseAssets' as it is up-to-date.
+[        ] work action resolve out (project :flutter_plugin_android_lifecycle) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :image_picker_android:mergeReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:mergeReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:mergeReleaseShaders UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:mergeReleaseShaders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':image_picker_android:mergeReleaseShaders' as it is up-to-date.
+[        ] Resolve mutations for :image_picker_android:compileReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:compileReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:compileReleaseShaders NO-SOURCE
+[        ] Skipping task ':image_picker_android:compileReleaseShaders' as it has no source files and no previous output files.
+[        ] Resolve mutations for :image_picker_android:generateReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:generateReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:generateReleaseAssets UP-TO-DATE
+[        ] Skipping task ':image_picker_android:generateReleaseAssets' as it has no actions.
+[        ] Resolve mutations for :image_picker_android:packageReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] :image_picker_android:packageReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] > Task :image_picker_android:packageReleaseAssets UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:packageReleaseAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':image_picker_android:packageReleaseAssets' as it is up-to-date.
+[        ] work action resolve out (project :image_picker_android) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :shared_preferences_android:mergeReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:mergeReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] > Task :shared_preferences_android:mergeReleaseShaders UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:mergeReleaseShaders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':shared_preferences_android:mergeReleaseShaders' as it is up-to-date.
+[        ] Resolve mutations for :shared_preferences_android:compileReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:compileReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] > Task :shared_preferences_android:compileReleaseShaders NO-SOURCE
+[        ] Skipping task ':shared_preferences_android:compileReleaseShaders' as it has no source files and no previous output files.
+[        ] Resolve mutations for :shared_preferences_android:generateReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:generateReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] > Task :shared_preferences_android:generateReleaseAssets UP-TO-DATE
+[        ] Skipping task ':shared_preferences_android:generateReleaseAssets' as it has no actions.
+[        ] Resolve mutations for :shared_preferences_android:packageReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] :shared_preferences_android:packageReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] > Task :shared_preferences_android:packageReleaseAssets UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:packageReleaseAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':shared_preferences_android:packageReleaseAssets' as it is up-to-date.
+[        ] work action resolve out (project :shared_preferences_android) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :url_launcher_android:mergeReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] :url_launcher_android:mergeReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] > Task :url_launcher_android:mergeReleaseShaders UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:mergeReleaseShaders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':url_launcher_android:mergeReleaseShaders' as it is up-to-date.
+[        ] Resolve mutations for :url_launcher_android:compileReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] :url_launcher_android:compileReleaseShaders (Thread[#468,included builds,5,main]) started.
+[        ] > Task :url_launcher_android:compileReleaseShaders NO-SOURCE
+[        ] Skipping task ':url_launcher_android:compileReleaseShaders' as it has no source files and no previous output files.
+[        ] Resolve mutations for :url_launcher_android:generateReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] :url_launcher_android:generateReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] > Task :url_launcher_android:generateReleaseAssets UP-TO-DATE
+[        ] Skipping task ':url_launcher_android:generateReleaseAssets' as it has no actions.
+[        ] Resolve mutations for :url_launcher_android:packageReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] :url_launcher_android:packageReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] > Task :url_launcher_android:packageReleaseAssets UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:packageReleaseAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':url_launcher_android:packageReleaseAssets' as it is up-to-date.
+[        ] work action resolve out (project :url_launcher_android) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :app:mergeReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] :app:mergeReleaseAssets (Thread[#468,included builds,5,main]) started.
+[        ] > Task :app:mergeReleaseAssets
+[        ] Caching disabled for task ':app:mergeReleaseAssets' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Task ':app:mergeReleaseAssets' is not up-to-date because:
+[   +1 ms]   Output property 'outputDir' file C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\assets\release\mergeReleaseAssets has been removed.
+[   +1 ms] The input changes require a full rebuild for incremental task ':app:mergeReleaseAssets'.
+[        ] Resolve mutations for :app:copyFlutterAssetsRelease (Thread[#468,included builds,5,main]) started.
+[        ] :app:copyFlutterAssetsRelease (Thread[#468,included builds,5,main]) started.
+[  +54 ms] > Task :app:copyFlutterAssetsRelease
+[        ] Caching disabled for task ':app:copyFlutterAssetsRelease' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Task ':app:copyFlutterAssetsRelease' is not up-to-date because:
+[        ]   Output property 'destinationDir' file C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\assets\release\mergeReleaseAssets\flutter_assets has been removed.
+[        ]   Output property 'destinationDir' file C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\assets\release\mergeReleaseAssets\flutter_assets\AssetManifest.bin has been removed.
+[        ]   Output property 'destinationDir' file C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\assets\release\mergeReleaseAssets\flutter_assets\FontManifest.json has been removed.
+[        ]   and more...
+[        ] Resolve mutations for :app:generateReleaseResValues (Thread[#468,included builds,5,main]) started.
+[        ] :app:generateReleaseResValues (Thread[#468,included builds,5,main]) started.
+[        ] > Task :app:generateReleaseResValues UP-TO-DATE
+[        ] Caching disabled for task ':app:generateReleaseResValues' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:generateReleaseResValues' as it is up-to-date.
+[        ] Resolve mutations for :app:mapReleaseSourceSetPaths (Thread[#468,included builds,5,main]) started.
+[        ] :app:mapReleaseSourceSetPaths (Thread[#468,included builds,5,main]) started.
+[        ] > Task :app:mapReleaseSourceSetPaths UP-TO-DATE
+[        ] Caching disabled for task ':app:mapReleaseSourceSetPaths' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:mapReleaseSourceSetPaths' as it is up-to-date.
+[        ] Resolve mutations for :app:generateReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] :app:generateReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] > Task :app:generateReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':app:generateReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:generateReleaseResources' as it is up-to-date.
+[        ] Resolve mutations for :app:mergeReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] :app:mergeReleaseResources (Thread[#468,included builds,5,main]) started.
+[  +87 ms] > Task :app:mergeReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:mergeReleaseResources' as it is up-to-date.
+[        ] Resolve mutations for :app:packageReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] :app:packageReleaseResources (Thread[#468,included builds,5,main]) started.
+[        ] > Task :app:packageReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':app:packageReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:packageReleaseResources' as it is up-to-date.
+[        ] Resolve mutations for :app:parseReleaseLocalResources (Thread[#468,included builds,5,main]) started.
+[        ] :app:parseReleaseLocalResources (Thread[#468,included builds,5,main]) started.
+[   +1 ms] > Task :app:parseReleaseLocalResources UP-TO-DATE
+[        ] Caching disabled for task ':app:parseReleaseLocalResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:parseReleaseLocalResources' as it is up-to-date.
+[        ] Resolve mutations for :app:createReleaseCompatibleScreenManifests (Thread[#468,included builds,5,main]) started.
+[        ] :app:createReleaseCompatibleScreenManifests (Thread[#468,included builds,5,main]) started.
+[        ] > Task :app:createReleaseCompatibleScreenManifests UP-TO-DATE
+[        ] Caching disabled for task ':app:createReleaseCompatibleScreenManifests' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:createReleaseCompatibleScreenManifests' as it is up-to-date.
+[        ] Resolve mutations for :app:extractDeepLinksRelease (Thread[#468,included builds,5,main]) started.
+[        ] :app:extractDeepLinksRelease (Thread[#468,included builds,5,main]) started.
+[        ] > Task :app:extractDeepLinksRelease UP-TO-DATE
+[        ] Caching disabled for task ':app:extractDeepLinksRelease' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:extractDeepLinksRelease' as it is up-to-date.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:extractDeepLinksRelease (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:extractDeepLinksRelease (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:extractDeepLinksRelease UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:extractDeepLinksRelease' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_plugin_android_lifecycle:extractDeepLinksRelease' as it is up-to-date.
+[        ] work action resolve navigation.json (project :flutter_plugin_android_lifecycle) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:processReleaseManifest (Thread[#468,included builds,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:processReleaseManifest (Thread[#468,included builds,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:processReleaseManifest UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:processReleaseManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':flutter_plugin_android_lifecycle:processReleaseManifest' as it is up-to-date.
+[        ] work action resolve AndroidManifest.xml (project :flutter_plugin_android_lifecycle) (Thread[#468,included builds,5,main]) started.
+[        ] Resolve mutations for :image_picker_android:extractDeepLinksRelease (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :image_picker_android:extractDeepLinksRelease (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :image_picker_android:extractDeepLinksRelease UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:extractDeepLinksRelease' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':image_picker_android:extractDeepLinksRelease' as it is up-to-date.
+[        ] work action resolve navigation.json (project :image_picker_android) (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] Resolve mutations for :image_picker_android:processReleaseManifest (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :image_picker_android:processReleaseManifest (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :image_picker_android:processReleaseManifest UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:processReleaseManifest' because:
+[        ]   Build cache is disabled
+[   +1 ms] Skipping task ':image_picker_android:processReleaseManifest' as it is up-to-date.
+[        ] work action resolve AndroidManifest.xml (project :image_picker_android) (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] Resolve mutations for :shared_preferences_android:extractDeepLinksRelease (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :shared_preferences_android:extractDeepLinksRelease (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :shared_preferences_android:extractDeepLinksRelease UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:extractDeepLinksRelease' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':shared_preferences_android:extractDeepLinksRelease' as it is up-to-date.
+[        ] work action resolve navigation.json (project :shared_preferences_android) (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] Resolve mutations for :shared_preferences_android:processReleaseManifest (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] :shared_preferences_android:processReleaseManifest (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] > Task :shared_preferences_android:processReleaseManifest UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:processReleaseManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':shared_preferences_android:processReleaseManifest' as it is up-to-date.
+[        ] work action resolve AndroidManifest.xml (project :shared_preferences_android) (Thread[#479,Execution worker Thread 11,5,main]) started.
+[        ] Resolve mutations for :url_launcher_android:extractDeepLinksRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :url_launcher_android:extractDeepLinksRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[  +86 ms] > Task :url_launcher_android:extractDeepLinksRelease UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:extractDeepLinksRelease' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':url_launcher_android:extractDeepLinksRelease' as it is up-to-date.
+[        ] work action resolve navigation.json (project :url_launcher_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :url_launcher_android:processReleaseManifest (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :url_launcher_android:processReleaseManifest (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :url_launcher_android:processReleaseManifest UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:processReleaseManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':url_launcher_android:processReleaseManifest' as it is up-to-date.
+[        ] work action resolve AndroidManifest.xml (project :url_launcher_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :app:processReleaseMainManifest (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:processReleaseMainManifest (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:processReleaseMainManifest UP-TO-DATE
+[        ] Caching disabled for task ':app:processReleaseMainManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:processReleaseMainManifest' as it is up-to-date.
+[        ] Resolve mutations for :app:outputReleaseAppLinkSettings (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:outputReleaseAppLinkSettings (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:outputReleaseAppLinkSettings UP-TO-DATE
+[        ] Caching disabled for task ':app:outputReleaseAppLinkSettings' because:
+[        ]   Build cache is disabled
+[        ]   Caching has not been enabled for the task
+[        ] Skipping task ':app:outputReleaseAppLinkSettings' as it is up-to-date.
+[        ] Resolve mutations for :app:processReleaseManifest (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:processReleaseManifest (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:processReleaseManifest UP-TO-DATE
+[        ] Caching disabled for task ':app:processReleaseManifest' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:processReleaseManifest' as it is up-to-date.
+[        ] Resolve mutations for :app:processReleaseManifestForPackage (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:processReleaseManifestForPackage (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:processReleaseManifestForPackage UP-TO-DATE
+[        ] Custom actions are attached to task ':app:processReleaseManifestForPackage'.
+[        ] Caching disabled for task ':app:processReleaseManifestForPackage' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:processReleaseManifestForPackage' as it is up-to-date.
+[        ] Resolve mutations for :app:processReleaseResources (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:processReleaseResources (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:processReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':app:processReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:processReleaseResources' as it is up-to-date.
+[        ] Resolve mutations for :image_picker_android:bundleLibCompileToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :image_picker_android:bundleLibCompileToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :image_picker_android:bundleLibCompileToJarRelease UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:bundleLibCompileToJarRelease' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':image_picker_android:bundleLibCompileToJarRelease' as it is up-to-date.
+[        ] work action resolve classes.jar (project :image_picker_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :shared_preferences_android:bundleLibCompileToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :shared_preferences_android:bundleLibCompileToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :shared_preferences_android:bundleLibCompileToJarRelease UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:bundleLibCompileToJarRelease' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':shared_preferences_android:bundleLibCompileToJarRelease' as it is up-to-date.
+[        ] work action resolve classes.jar (project :shared_preferences_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :url_launcher_android:bundleLibCompileToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :url_launcher_android:bundleLibCompileToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :url_launcher_android:bundleLibCompileToJarRelease UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:bundleLibCompileToJarRelease' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':url_launcher_android:bundleLibCompileToJarRelease' as it is up-to-date.
+[        ] work action resolve classes.jar (project :url_launcher_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :app:compileReleaseKotlin (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:compileReleaseKotlin (Thread[#476,Execution worker Thread 8,5,main]) started.
+[  +85 ms] > Task :app:compileReleaseKotlin UP-TO-DATE
+[        ] GradleBuildProject.Builder should not be accessed through AnalyticsConfiguratorService after AnalyticsService is created. Analytics information of this build might be incomplete.
+[        ] Caching disabled for task ':app:compileReleaseKotlin' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:compileReleaseKotlin' as it is up-to-date.
+[        ] Resolve mutations for :app:javaPreCompileRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:javaPreCompileRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:javaPreCompileRelease UP-TO-DATE
+[        ] Caching disabled for task ':app:javaPreCompileRelease' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:javaPreCompileRelease' as it is up-to-date.
+[        ] Resolve mutations for :app:compileReleaseJavaWithJavac (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:compileReleaseJavaWithJavac (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:compileReleaseJavaWithJavac UP-TO-DATE
+[        ] Custom actions are attached to task ':app:compileReleaseJavaWithJavac'.
+[        ] Caching disabled for task ':app:compileReleaseJavaWithJavac' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:compileReleaseJavaWithJavac' as it is up-to-date.
+[        ] No compile result for :app:compileReleaseJavaWithJavac
+[        ] No compile result for :app:compileReleaseJavaWithJavac
+[        ] No compile result for :app:compileReleaseJavaWithJavac
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:prepareReleaseArtProfile (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:prepareReleaseArtProfile (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:prepareReleaseArtProfile UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:prepareReleaseArtProfile' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':flutter_plugin_android_lifecycle:prepareReleaseArtProfile' as it is up-to-date.
+[        ] work action resolve baseline-prof.txt (project :flutter_plugin_android_lifecycle) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :image_picker_android:prepareReleaseArtProfile (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :image_picker_android:prepareReleaseArtProfile (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :image_picker_android:prepareReleaseArtProfile UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:prepareReleaseArtProfile' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':image_picker_android:prepareReleaseArtProfile' as it is up-to-date.
+[        ] work action resolve baseline-prof.txt (project :image_picker_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :shared_preferences_android:prepareReleaseArtProfile (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :shared_preferences_android:prepareReleaseArtProfile (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :shared_preferences_android:prepareReleaseArtProfile UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:prepareReleaseArtProfile' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':shared_preferences_android:prepareReleaseArtProfile' as it is up-to-date.
+[        ] work action resolve baseline-prof.txt (project :shared_preferences_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :url_launcher_android:prepareReleaseArtProfile (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :url_launcher_android:prepareReleaseArtProfile (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :url_launcher_android:prepareReleaseArtProfile UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:prepareReleaseArtProfile' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':url_launcher_android:prepareReleaseArtProfile' as it is up-to-date.
+[        ] work action resolve baseline-prof.txt (project :url_launcher_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :app:mergeReleaseArtProfile (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:mergeReleaseArtProfile (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:mergeReleaseArtProfile UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeReleaseArtProfile' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':app:mergeReleaseArtProfile' as it is up-to-date.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:bundleLibRuntimeToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:bundleLibRuntimeToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:bundleLibRuntimeToJarRelease UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:bundleLibRuntimeToJarRelease' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_plugin_android_lifecycle:bundleLibRuntimeToJarRelease' as it is up-to-date.
+[        ] work action resolve classes.jar (project :flutter_plugin_android_lifecycle) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :image_picker_android:bundleLibRuntimeToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :image_picker_android:bundleLibRuntimeToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :image_picker_android:bundleLibRuntimeToJarRelease UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:bundleLibRuntimeToJarRelease' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':image_picker_android:bundleLibRuntimeToJarRelease' as it is up-to-date.
+[        ] work action resolve classes.jar (project :image_picker_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :shared_preferences_android:bundleLibRuntimeToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :shared_preferences_android:bundleLibRuntimeToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :shared_preferences_android:bundleLibRuntimeToJarRelease UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:bundleLibRuntimeToJarRelease' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':shared_preferences_android:bundleLibRuntimeToJarRelease' as it is up-to-date.
+[        ] work action resolve classes.jar (project :shared_preferences_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :url_launcher_android:bundleLibRuntimeToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :url_launcher_android:bundleLibRuntimeToJarRelease (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :url_launcher_android:bundleLibRuntimeToJarRelease UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:bundleLibRuntimeToJarRelease' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':url_launcher_android:bundleLibRuntimeToJarRelease' as it is up-to-date.
+[        ] work action resolve classes.jar (project :url_launcher_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :app:expandReleaseArtProfileWildcards (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:expandReleaseArtProfileWildcards (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:expandReleaseArtProfileWildcards UP-TO-DATE
+[        ] Caching disabled for task ':app:expandReleaseArtProfileWildcards' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:expandReleaseArtProfileWildcards' as it is up-to-date.
+[        ] Resolve mutations for :app:extractProguardFiles (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:extractProguardFiles (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:extractProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':app:extractProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Fast task
+[        ] Skipping task ':app:extractProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :app:mergeReleaseGeneratedProguardFiles (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:mergeReleaseGeneratedProguardFiles (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeReleaseGeneratedProguardFiles' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':app:mergeReleaseGeneratedProguardFiles' as it is up-to-date.
+[        ] Resolve mutations for :app:processReleaseJavaRes (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :app:processReleaseJavaRes (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :app:processReleaseJavaRes UP-TO-DATE
+[        ] file or directory 'C:\Users\chand\Downloads\Vaidra\vaidra\android\app\src\main\resources', not found
+[        ] file or directory 'C:\Users\chand\Downloads\Vaidra\vaidra\android\app\src\release\resources', not found
+[        ] file or directory 'C:\Users\chand\Downloads\Vaidra\vaidra\android\app\src\main\resources', not found
+[        ] file or directory 'C:\Users\chand\Downloads\Vaidra\vaidra\android\app\src\release\resources', not found
+[        ] Caching disabled for task ':app:processReleaseJavaRes' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:processReleaseJavaRes' as it is up-to-date.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:processReleaseJavaRes (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:processReleaseJavaRes (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:processReleaseJavaRes NO-SOURCE
+[        ] file or directory 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.29\android\src\main\resources', not found
+[        ] file or directory 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.29\android\src\release\resources', not found
+[        ] Skipping task ':flutter_plugin_android_lifecycle:processReleaseJavaRes' as it has no source files and no previous output files.
+[        ] work action resolve out (project :flutter_plugin_android_lifecycle) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :image_picker_android:processReleaseJavaRes (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :image_picker_android:processReleaseJavaRes (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :image_picker_android:processReleaseJavaRes NO-SOURCE
+[        ] file or directory 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+25\android\src\main\resources', not found
+[        ] file or directory 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+25\android\src\release\resources', not found
+[        ] Skipping task ':image_picker_android:processReleaseJavaRes' as it has no source files and no previous output files.
+[        ] work action resolve out (project :image_picker_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :shared_preferences_android:processReleaseJavaRes (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :shared_preferences_android:processReleaseJavaRes (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] > Task :shared_preferences_android:processReleaseJavaRes UP-TO-DATE
+[        ] file or directory 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.11\android\src\main\resources', not found
+[        ] file or directory 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.11\android\src\release\resources', not found
+[        ] file or directory 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.11\android\src\main\resources', not found
+[        ] file or directory 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.11\android\src\release\resources', not found
+[        ] Caching disabled for task ':shared_preferences_android:processReleaseJavaRes' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':shared_preferences_android:processReleaseJavaRes' as it is up-to-date.
+[        ] work action resolve out (project :shared_preferences_android) (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] Resolve mutations for :url_launcher_android:processReleaseJavaRes (Thread[#476,Execution worker Thread 8,5,main]) started.
+[        ] :url_launcher_android:processReleaseJavaRes (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :url_launcher_android:processReleaseJavaRes NO-SOURCE
+[        ] file or directory 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.17\android\src\main\resources', not found
+[        ] file or directory 'C:\Users\chand\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.17\android\src\release\resources', not found
+[        ] Skipping task ':url_launcher_android:processReleaseJavaRes' as it has no source files and no previous output files.
+[        ] work action resolve out (project :url_launcher_android) (Thread[#478,Execution worker Thread 10,5,main]) started.
+[   +2 ms] Resolve mutations for :app:mergeReleaseJavaResource (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:mergeReleaseJavaResource (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:mergeReleaseJavaResource UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeReleaseJavaResource' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:mergeReleaseJavaResource' as it is up-to-date.
+[        ] Resolve mutations for :app:mergeReleaseStartupProfile (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:mergeReleaseStartupProfile (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:mergeReleaseStartupProfile UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeReleaseStartupProfile' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':app:mergeReleaseStartupProfile' as it is up-to-date.
+[        ] Resolve mutations for :app:minifyReleaseWithR8 (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:minifyReleaseWithR8 (Thread[#478,Execution worker Thread 10,5,main]) started.
+[  +79 ms] > Task :app:minifyReleaseWithR8 UP-TO-DATE
+[        ] Caching disabled for task ':app:minifyReleaseWithR8' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:minifyReleaseWithR8' as it is up-to-date.
+[        ] Resolve mutations for :app:processApplicationManifestReleaseForBundle (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:processApplicationManifestReleaseForBundle (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:processApplicationManifestReleaseForBundle UP-TO-DATE
+[        ] Caching disabled for task ':app:processApplicationManifestReleaseForBundle' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:processApplicationManifestReleaseForBundle' as it is up-to-date.
+[        ] Resolve mutations for :app:bundleReleaseResources (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:bundleReleaseResources (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:bundleReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':app:bundleReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:bundleReleaseResources' as it is up-to-date.
+[        ] Resolve mutations for :app:extractReleaseVersionControlInfo (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:extractReleaseVersionControlInfo (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:extractReleaseVersionControlInfo UP-TO-DATE
+[        ] Caching disabled for task ':app:extractReleaseVersionControlInfo' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:extractReleaseVersionControlInfo' as it is up-to-date.
+[        ] Resolve mutations for :app:configureCMakeRelease[arm64-v8a] (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:configureCMakeRelease[arm64-v8a] (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:configureCMakeRelease[arm64-v8a]
+[        ] Caching disabled for task ':app:configureCMakeRelease[arm64-v8a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:configureCMakeRelease[arm64-v8a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\scripts\CMakeLists.txt release|arm64-v8a : Start JSON generation. Platform version: 24 min SDK version: arm64-v8a
+[        ] C/C++: C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\scripts\CMakeLists.txt release|arm64-v8a : JSON 'C:\Users\chand\Downloads\Vaidra\vaidra\build\.cxx\release\2ht3o2v1\arm64-v8a\android_gradle_build.json' was up-to-date
+[        ] C/C++: C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\scripts\CMakeLists.txt release|arm64-v8a : JSON generation completed without problems
+[   +1 ms] C/C++: C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\scripts\CMakeLists.txt release|arm64-v8a : Writing build model to C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\cxx\release\2ht3o2v1\logs\arm64-v8a\build_model.json
+[        ] Resolve mutations for :app:buildCMakeRelease[arm64-v8a] (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:buildCMakeRelease[arm64-v8a] (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:buildCMakeRelease[arm64-v8a]
+[        ] Caching disabled for task ':app:buildCMakeRelease[arm64-v8a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:buildCMakeRelease[arm64-v8a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[        ] C/C++: no libraries
+[        ] Resolve mutations for :app:configureCMakeRelease[armeabi-v7a] (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:configureCMakeRelease[armeabi-v7a] (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:configureCMakeRelease[armeabi-v7a]
+[        ] Caching disabled for task ':app:configureCMakeRelease[armeabi-v7a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:configureCMakeRelease[armeabi-v7a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\scripts\CMakeLists.txt release|armeabi-v7a : Start JSON generation. Platform version: 24 min SDK version: armeabi-v7a
+[        ] C/C++: C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\scripts\CMakeLists.txt release|armeabi-v7a : JSON 'C:\Users\chand\Downloads\Vaidra\vaidra\build\.cxx\release\2ht3o2v1\armeabi-v7a\android_gradle_build.json' was up-to-date
+[        ] C/C++: C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\scripts\CMakeLists.txt release|armeabi-v7a : JSON generation completed without problems
+[        ] C/C++: C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\scripts\CMakeLists.txt release|armeabi-v7a : Writing build model to C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\cxx\release\2ht3o2v1\logs\armeabi-v7a\build_model.json
+[        ] Resolve mutations for :app:buildCMakeRelease[armeabi-v7a] (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:buildCMakeRelease[armeabi-v7a] (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:buildCMakeRelease[armeabi-v7a]
+[        ] Caching disabled for task ':app:buildCMakeRelease[armeabi-v7a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:buildCMakeRelease[armeabi-v7a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[        ] C/C++: no libraries
+[        ] Resolve mutations for :app:configureCMakeRelease[x86_64] (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:configureCMakeRelease[x86_64] (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:configureCMakeRelease[x86_64]
+[        ] Caching disabled for task ':app:configureCMakeRelease[x86_64]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:configureCMakeRelease[x86_64]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\scripts\CMakeLists.txt release|x86_64 : Start JSON generation. Platform version: 24 min SDK version: x86_64
+[        ] C/C++: C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\scripts\CMakeLists.txt release|x86_64 : JSON 'C:\Users\chand\Downloads\Vaidra\vaidra\build\.cxx\release\2ht3o2v1\x86_64\android_gradle_build.json' was up-to-date
+[        ] C/C++: C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\scripts\CMakeLists.txt release|x86_64 : JSON generation completed without problems
+[        ] C/C++: C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle\src\main\scripts\CMakeLists.txt release|x86_64 : Writing build model to C:\Users\chand\Downloads\Vaidra\vaidra\build\app\intermediates\cxx\release\2ht3o2v1\logs\x86_64\build_model.json
+[        ] Resolve mutations for :app:buildCMakeRelease[x86_64] (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:buildCMakeRelease[x86_64] (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:buildCMakeRelease[x86_64]
+[        ] Caching disabled for task ':app:buildCMakeRelease[x86_64]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:buildCMakeRelease[x86_64]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[        ] C/C++: no libraries
+[        ] Resolve mutations for :app:mergeReleaseJniLibFolders (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:mergeReleaseJniLibFolders (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:mergeReleaseJniLibFolders UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeReleaseJniLibFolders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':app:mergeReleaseJniLibFolders' as it is up-to-date.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:mergeReleaseJniLibFolders (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:mergeReleaseJniLibFolders (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:mergeReleaseJniLibFolders UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:mergeReleaseJniLibFolders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':flutter_plugin_android_lifecycle:mergeReleaseJniLibFolders' as it is up-to-date.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:mergeReleaseNativeLibs (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:mergeReleaseNativeLibs (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:mergeReleaseNativeLibs NO-SOURCE
+[        ] Skipping task ':flutter_plugin_android_lifecycle:mergeReleaseNativeLibs' as it has no source files and no previous output files.
+[        ] Resolve mutations for :flutter_plugin_android_lifecycle:copyReleaseJniLibsProjectOnly (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :flutter_plugin_android_lifecycle:copyReleaseJniLibsProjectOnly (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :flutter_plugin_android_lifecycle:copyReleaseJniLibsProjectOnly UP-TO-DATE
+[        ] Caching disabled for task ':flutter_plugin_android_lifecycle:copyReleaseJniLibsProjectOnly' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':flutter_plugin_android_lifecycle:copyReleaseJniLibsProjectOnly' as it is up-to-date.
+[        ] work action resolve jni (project :flutter_plugin_android_lifecycle) (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] Resolve mutations for :image_picker_android:mergeReleaseJniLibFolders (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :image_picker_android:mergeReleaseJniLibFolders (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :image_picker_android:mergeReleaseJniLibFolders UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:mergeReleaseJniLibFolders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':image_picker_android:mergeReleaseJniLibFolders' as it is up-to-date.
+[        ] Resolve mutations for :image_picker_android:mergeReleaseNativeLibs (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :image_picker_android:mergeReleaseNativeLibs (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :image_picker_android:mergeReleaseNativeLibs NO-SOURCE
+[        ] Skipping task ':image_picker_android:mergeReleaseNativeLibs' as it has no source files and no previous output files.
+[   +1 ms] Resolve mutations for :image_picker_android:copyReleaseJniLibsProjectOnly (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :image_picker_android:copyReleaseJniLibsProjectOnly (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :image_picker_android:copyReleaseJniLibsProjectOnly UP-TO-DATE
+[        ] Caching disabled for task ':image_picker_android:copyReleaseJniLibsProjectOnly' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':image_picker_android:copyReleaseJniLibsProjectOnly' as it is up-to-date.
+[        ] work action resolve jni (project :image_picker_android) (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] Resolve mutations for :shared_preferences_android:mergeReleaseJniLibFolders (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :shared_preferences_android:mergeReleaseJniLibFolders (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :shared_preferences_android:mergeReleaseJniLibFolders UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:mergeReleaseJniLibFolders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':shared_preferences_android:mergeReleaseJniLibFolders' as it is up-to-date.
+[        ] Resolve mutations for :shared_preferences_android:mergeReleaseNativeLibs (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :shared_preferences_android:mergeReleaseNativeLibs (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :shared_preferences_android:mergeReleaseNativeLibs NO-SOURCE
+[        ] Skipping task ':shared_preferences_android:mergeReleaseNativeLibs' as it has no source files and no previous output files.
+[        ] Resolve mutations for :shared_preferences_android:copyReleaseJniLibsProjectOnly (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :shared_preferences_android:copyReleaseJniLibsProjectOnly (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :shared_preferences_android:copyReleaseJniLibsProjectOnly UP-TO-DATE
+[        ] Caching disabled for task ':shared_preferences_android:copyReleaseJniLibsProjectOnly' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':shared_preferences_android:copyReleaseJniLibsProjectOnly' as it is up-to-date.
+[        ] work action resolve jni (project :shared_preferences_android) (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] Resolve mutations for :url_launcher_android:mergeReleaseJniLibFolders (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :url_launcher_android:mergeReleaseJniLibFolders (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :url_launcher_android:mergeReleaseJniLibFolders UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:mergeReleaseJniLibFolders' because:
+[        ]   Build cache is disabled
+[        ]   Simple merging task
+[        ] Skipping task ':url_launcher_android:mergeReleaseJniLibFolders' as it is up-to-date.
+[        ] Resolve mutations for :url_launcher_android:mergeReleaseNativeLibs (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :url_launcher_android:mergeReleaseNativeLibs (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :url_launcher_android:mergeReleaseNativeLibs NO-SOURCE
+[        ] Skipping task ':url_launcher_android:mergeReleaseNativeLibs' as it has no source files and no previous output files.
+[  +51 ms] Resolve mutations for :url_launcher_android:copyReleaseJniLibsProjectOnly (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :url_launcher_android:copyReleaseJniLibsProjectOnly (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :url_launcher_android:copyReleaseJniLibsProjectOnly UP-TO-DATE
+[        ] Caching disabled for task ':url_launcher_android:copyReleaseJniLibsProjectOnly' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':url_launcher_android:copyReleaseJniLibsProjectOnly' as it is up-to-date.
+[        ] work action resolve jni (project :url_launcher_android) (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] Resolve mutations for :app:mergeReleaseNativeLibs (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:mergeReleaseNativeLibs (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:mergeReleaseNativeLibs UP-TO-DATE
+[        ] Caching disabled for task ':app:mergeReleaseNativeLibs' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:mergeReleaseNativeLibs' as it is up-to-date.
+[        ] Resolve mutations for :app:stripReleaseDebugSymbols (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:stripReleaseDebugSymbols (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:stripReleaseDebugSymbols UP-TO-DATE
+[        ] Caching disabled for task ':app:stripReleaseDebugSymbols' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:stripReleaseDebugSymbols' as it is up-to-date.
+[        ] Resolve mutations for :app:writeReleaseAppMetadata (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:writeReleaseAppMetadata (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:writeReleaseAppMetadata UP-TO-DATE
+[        ] Caching disabled for task ':app:writeReleaseAppMetadata' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:writeReleaseAppMetadata' as it is up-to-date.
+[        ] Resolve mutations for :app:buildReleasePreBundle (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:buildReleasePreBundle (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:buildReleasePreBundle UP-TO-DATE
+[        ] Caching disabled for task ':app:buildReleasePreBundle' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:buildReleasePreBundle' as it is up-to-date.
+[        ] Resolve mutations for :app:compileReleaseArtProfile (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:compileReleaseArtProfile (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:compileReleaseArtProfile UP-TO-DATE
+[        ] Caching disabled for task ':app:compileReleaseArtProfile' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:compileReleaseArtProfile' as it is up-to-date.
+[        ] Resolve mutations for :app:collectReleaseDependencies (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:collectReleaseDependencies (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:collectReleaseDependencies UP-TO-DATE
+[        ] Caching disabled for task ':app:collectReleaseDependencies' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:collectReleaseDependencies' as it is up-to-date.
+[        ] Resolve mutations for :app:configureReleaseDependencies (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:configureReleaseDependencies (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:configureReleaseDependencies UP-TO-DATE
+[        ] Caching disabled for task ':app:configureReleaseDependencies' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:configureReleaseDependencies' as it is up-to-date.
+[        ] Resolve mutations for :app:extractReleaseNativeSymbolTables (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:extractReleaseNativeSymbolTables (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:extractReleaseNativeSymbolTables UP-TO-DATE
+[        ] Caching disabled for task ':app:extractReleaseNativeSymbolTables' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:extractReleaseNativeSymbolTables' as it is up-to-date.
+[        ] Resolve mutations for :app:parseReleaseIntegrityConfig (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:parseReleaseIntegrityConfig (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:parseReleaseIntegrityConfig UP-TO-DATE
+[        ] Caching disabled for task ':app:parseReleaseIntegrityConfig' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:parseReleaseIntegrityConfig' as it is up-to-date.
+[        ] Resolve mutations for :app:packageReleaseBundle (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:packageReleaseBundle (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:packageReleaseBundle UP-TO-DATE
+[        ] Caching disabled for task ':app:packageReleaseBundle' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:packageReleaseBundle' as it is up-to-date.
+[        ] Resolve mutations for :app:shrinkBundleReleaseResources (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:shrinkBundleReleaseResources (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:shrinkBundleReleaseResources UP-TO-DATE
+[        ] Caching disabled for task ':app:shrinkBundleReleaseResources' because:
+[        ]   Build cache is disabled
+[        ] Skipping task ':app:shrinkBundleReleaseResources' as it is up-to-date.
+[        ] Resolve mutations for :app:validateSigningRelease (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:validateSigningRelease (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:validateSigningRelease UP-TO-DATE
+[        ] Caching disabled for task ':app:validateSigningRelease' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:validateSigningRelease' as it is up-to-date.
+[        ] Resolve mutations for :app:signReleaseBundle (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:signReleaseBundle (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:signReleaseBundle UP-TO-DATE
+[        ] Caching disabled for task ':app:signReleaseBundle' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:signReleaseBundle' as it is up-to-date.
+[        ] Resolve mutations for :app:produceReleaseBundleIdeListingFile (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:produceReleaseBundleIdeListingFile (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:produceReleaseBundleIdeListingFile UP-TO-DATE
+[        ] Caching disabled for task ':app:produceReleaseBundleIdeListingFile' because:
+[        ]   Build cache is disabled
+[        ]   Fast task
+[        ] Skipping task ':app:produceReleaseBundleIdeListingFile' as it is up-to-date.
+[        ] Resolve mutations for :app:createReleaseBundleListingFileRedirect (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:createReleaseBundleListingFileRedirect (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:createReleaseBundleListingFileRedirect UP-TO-DATE
+[        ] Caching disabled for task ':app:createReleaseBundleListingFileRedirect' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Skipping task ':app:createReleaseBundleListingFileRedirect' as it is up-to-date.
+[        ] Resolve mutations for :app:bundleRelease (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] :app:bundleRelease (Thread[#478,Execution worker Thread 10,5,main]) started.
+[        ] > Task :app:bundleRelease UP-TO-DATE
+[        ] Skipping task ':app:bundleRelease' as it has no actions.
+[  +64 ms] [Incubating] Problems report is available at: file:///C:/Users/chand/Downloads/Vaidra/vaidra/build/reports/problems/problems-report.html
+[        ] Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+[        ] You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+[        ] For more on this, please refer to https://docs.gradle.org/8.12/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+[        ] BUILD SUCCESSFUL in 10s
+[        ] 142 actionable tasks: 10 executed, 132 up-to-date
+[        ] Watched directory hierarchies: [C:\Users\chand\Downloads\Vaidra\flutter\packages\flutter_tools\gradle, C:\Users\chand\Downloads\Vaidra\vaidra\android]
+[  +35 ms] Running Gradle task 'bundleRelease'... (completed in 10.4s)
+[   +8 ms] Failed to find cmdline-tools when checking final appbundle for debug symbols.
+[   +1 ms] "flutter appbundle" took 12,205ms.
+flutter : [ +100 ms] 
+Release app bundle 
+failed to strip 
+debug symbols from 
+native libraries.
+At line:1 char:1
++ flutter build 
+appbundle --release 
+--verbose 2>&1 | 
+Out-File -FilePath 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : 
+NotSpecified: ([ +10 
+   0 ms] Rele...tive 
+libra    
+ries.:String) [], 
+Remot    eException
+    + FullyQualifiedE
+rrorId     : 
+NativeCommandError
+ 
+           Please 
+run flutter doctor 
+and ensure that the 
+Android toolchain 
+does not
+           report 
+any issues.
+
+           
+Otherwise, file an 
+issue at https://gith
+ub.com/flutter/flutte
+r/issues.
+[  +15 ms] 
+           #0      
+throwToolExit (packag
+e:flutter_tools/src/b
+ase/common.dart:34:3)
+           #1      An
+droidGradleBuilder.bu
+ildGradleApp (package
+:flutter_tools/src/an
+droid/gradle.dart:607
+:9)
+           
+<asynchronous 
+suspension>
+           #2      An
+droidGradleBuilder.bu
+ildAab (package:flutt
+er_tools/src/android/
+gradle.dart:255:5)
+           
+<asynchronous 
+suspension>
+           #3      Bu
+ildAppBundleCommand.r
+unCommand (package:fl
+utter_tools/src/comma
+nds/build_appbundle.d
+art:168:5)
+           
+<asynchronous 
+suspension>
+           #4      Fl
+utterCommand.run.<ano
+nymous closure> (pack
+age:flutter_tools/src
+/runner/flutter_comma
+nd.dart:1559:27)
+           
+<asynchronous 
+suspension>
+           #5      Ap
+pContext.run.<anonymo
+us closure> (package:
+flutter_tools/src/bas
+e/context.dart:154:19
+)
+           
+<asynchronous 
+suspension>
+           #6      Co
+mmandRunner.runComman
+d (package:args/comma
+nd_runner.dart:212:13
+)
+           
+<asynchronous 
+suspension>
+           #7      Fl
+utterCommandRunner.ru
+nCommand.<anonymous 
+closure> (package:flu
+tter_tools/src/runner
+/flutter_command_runn
+er.dart:487:9)
+           
+<asynchronous 
+suspension>
+           #8      Ap
+pContext.run.<anonymo
+us closure> (package:
+flutter_tools/src/bas
+e/context.dart:154:19
+)
+           
+<asynchronous 
+suspension>
+           #9      Fl
+utterCommandRunner.ru
+nCommand (package:flu
+tter_tools/src/runner
+/flutter_command_runn
+er.dart:422:5)
+           
+<asynchronous 
+suspension>
+           #10     
+run.<anonymous 
+closure>.<anonymous 
+closure> (package:flu
+tter_tools/runner.dar
+t:104:11)
+           
+<asynchronous 
+suspension>
+           #11     Ap
+pContext.run.<anonymo
+us closure> (package:
+flutter_tools/src/bas
+e/context.dart:154:19
+)
+           
+<asynchronous 
+suspension>
+           #12     
+main (package:flutter
+_tools/executable.dar
+t:103:3)
+           
+<asynchronous 
+suspension>
+
+
+[        ] Running 1 shutdown hook
+[   +4 ms] Shutdown hooks complete
+[  +78 ms] exiting with code 1
