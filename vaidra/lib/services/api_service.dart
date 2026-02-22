@@ -3,9 +3,8 @@ import 'package:dio/dio.dart';
 import 'package:image_picker/image_picker.dart'; // For XFile
 
 class ApiService {
-  // IMPORTANT: Update this URL to your production backend before releasing
-  // Example: 'https://api.vaidra.com' or 'https://your-backend.railway.app'
-  static const String productionUrl = 'https://YOUR-APP-NAME.onrender.com'; // ← Replace with your Render URL
+  // Production backend on Render
+  static const String productionUrl = 'https://vaidra-backend.onrender.com';
   
   // Development URLs for testing
   static String get _devUrl {
