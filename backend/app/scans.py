@@ -22,7 +22,7 @@ def get_recent_scans(db: Session = Depends(get_db), limit: int = 5):
             result=schemas.ScanResult(
                 condition=scan.condition,
                 confidence=scan.confidence or 0.0,
-                severity=scan.severity.value if scan.severity else "MINOR",
+                severity=scan.severity if scan.severity else "MINOR",
                 steps=scan.steps.split("|") if scan.steps else [],
                 warnings=scan.warnings.split("|") if scan.warnings else []
             ),
@@ -55,10 +55,8 @@ def analyze(scan_image: UploadFile = File(...), user_id: int = Form(None), db: S
     condition = ai_res.get("condition") or ai_res.get("diagnosis") or "Unclear image"
     confidence = float(ai_res.get("confidence") or ai_res.get("score") or 0.0)
     severity_raw = (ai_res.get("severity") or "MINOR").upper()
-    try:
-        severity_enum = models.Severity[severity_raw]
-    except Exception:
-        severity_enum = models.Severity.MINOR
+    VALID_SEVERITIES = {"MINOR", "MODERATE", "URGENT"}
+    severity_str = severity_raw if severity_raw in VALID_SEVERITIES else "MINOR"
 
     steps = ai_res.get("steps") or ai_res.get("advice") or []
     warnings = ai_res.get("warnings") or []
@@ -69,7 +67,7 @@ def analyze(scan_image: UploadFile = File(...), user_id: int = Form(None), db: S
         s3_key=s3_key,
         condition=condition,
         confidence=confidence,
-        severity=severity_enum,
+        severity=severity_str,
         steps="|".join(steps) if isinstance(steps, list) else str(steps),
         warnings="|".join(warnings) if isinstance(warnings, list) else str(warnings)
     )
@@ -82,7 +80,7 @@ def analyze(scan_image: UploadFile = File(...), user_id: int = Form(None), db: S
         result=schemas.ScanResult(
             condition=scan.condition,
             confidence=scan.confidence or 0.0,
-            severity=scan.severity.value if scan.severity else "MINOR",
+            severity=scan.severity if scan.severity else "MINOR",
             steps=scan.steps.split("|") if scan.steps else [],
             warnings=scan.warnings.split("|") if scan.warnings else []
         )
