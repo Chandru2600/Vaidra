@@ -19,9 +19,9 @@ def analyze_image(file_path: str):
     try:
         genai.configure(api_key=settings.GEMINI_API_KEY)
         
-        # Use gemini-pro-vision which is the supported model for image analysis
-        print("Using model: gemini-pro-vision")
-        model = genai.GenerativeModel('gemini-pro-vision')
+        # Use gemini-1.5-pro which is the supported current generation model
+        print("Using model: gemini-1.5-pro")
+        model = genai.GenerativeModel('gemini-1.5-pro')
 
         # Load image using PIL (bypasses upload_file issues)
         print("Loading image with PIL...")
