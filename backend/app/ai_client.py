@@ -19,9 +19,9 @@ def analyze_image(file_path: str):
     try:
         genai.configure(api_key=settings.GEMINI_API_KEY)
         
-        # Use gemini-flash-latest which seems more reliable for free tier
-        print("Using model: gemini-flash-latest")
-        model = genai.GenerativeModel('gemini-flash-latest')
+        # Use gemini-1.5-flash which is the standard fast model for vision
+        print("Using model: gemini-1.5-flash")
+        model = genai.GenerativeModel('gemini-1.5-flash')
 
         # Load image using PIL (bypasses upload_file issues)
         print("Loading image with PIL...")
