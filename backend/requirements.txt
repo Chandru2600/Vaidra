@@ -12,6 +12,6 @@ requests==2.31.0
 boto3==1.28.72
 psycopg2-binary==2.9.10
 pydantic-settings
-google-generativeai==0.7.1
+google-generativeai==0.5.4
 Pillow==10.3.0
 
