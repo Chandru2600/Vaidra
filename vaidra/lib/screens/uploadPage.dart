@@ -14,7 +14,12 @@ class _UploadScreenState extends State<UploadScreen> {
   final picker = ImagePicker();
 
   Future _pickImage(ImageSource source) async {
-    final picked = await picker.pickImage(source: source);
+    final picked = await picker.pickImage(
+      source: source,
+      maxWidth: 1024,
+      maxHeight: 1024,
+      imageQuality: 70, // Compresses image to ~200-500KB instead of 10MB
+    );
     if (picked != null) {
       setState(() => _image = picked);
     }
@@ -22,7 +27,9 @@ class _UploadScreenState extends State<UploadScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
+      backgroundColor: isDark ? const Color(0xFF121212) : null,
       appBar: AppBar(title: Text("upload_photo".tr())),
       body: Padding(
         padding: const EdgeInsets.all(20),
@@ -37,7 +44,7 @@ class _UploadScreenState extends State<UploadScreen> {
                     return CircularProgressIndicator();
                   },
                 )
-              : Placeholder(fallbackHeight: 200),
+              : Placeholder(fallbackHeight: 200, color: isDark ? Colors.white24 : Colors.grey),
           SizedBox(height: 20),
           ElevatedButton.icon(
               onPressed: () => _pickImage(ImageSource.camera),
@@ -65,7 +72,7 @@ class _UploadScreenState extends State<UploadScreen> {
                             builder: (_) => ResultsScreen(
                                 imageFile: _image!,
                                 condition: result['condition'] ?? "Unknown",
-                                confidence: (result['confidence'] ?? 0).toInt(),
+                                confidence: (result['confidence'] is String) ? int.parse(result['confidence']) : (result['confidence'] ?? 0).toInt(),
                                 severity: result['severity'] ?? "Minor",
                                 steps: result['steps'] ?? [],
                                 warnings: result['warnings'] ?? [],

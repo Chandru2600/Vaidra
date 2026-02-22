@@ -126,15 +126,16 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Consumer<LanguageProvider>(
       builder: (context, lang, _) {
         return Scaffold(
-          backgroundColor: backgroundColor,
+          backgroundColor: isDark ? const Color(0xFF121212) : backgroundColor,
           appBar: AppBar(
             backgroundColor: Colors.transparent,
             elevation: 0,
             leading: IconButton(
-              icon: const Icon(Icons.arrow_back, color: textDark),
+              icon: Icon(Icons.arrow_back, color: isDark ? Colors.white : textDark),
               onPressed: () => Navigator.pop(context),
             ),
             title: Row(
@@ -154,10 +155,10 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
                   ),
                 ),
                 const SizedBox(width: 8),
-                const Text(
+                Text(
                   'Vaidra', // Brand name static
                   style: TextStyle(
-                    color: textDark,
+                    color: isDark ? Colors.white : textDark,
                     fontSize: 20,
                     fontWeight: FontWeight.w600,
                   ),
@@ -173,13 +174,13 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
                 children: [
                   const SizedBox(height: 20),
                   Text(lang.translate('location_details'),
-                      style: const TextStyle(
+                      style: TextStyle(
                           fontSize: 32,
                           fontWeight: FontWeight.bold,
-                          color: textDark)),
+                          color: isDark ? Colors.white : textDark)),
                   const SizedBox(height: 8),
                   Text(lang.translate('location_subtitle'),
-                      style: const TextStyle(fontSize: 16, color: textLight)),
+                      style: TextStyle(fontSize: 16, color: isDark ? Colors.white70 : textLight)),
                   const SizedBox(height: 40),
 
                   // GPS Detection Card
@@ -187,12 +188,12 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
                     width: double.infinity,
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(
                           color: _locationDetected
                               ? primaryGreen
-                              : Colors.grey.shade300,
+                              : (isDark ? Colors.white24 : Colors.grey.shade300),
                           width: _locationDetected ? 2 : 1),
                     ),
                     child: Column(
@@ -214,7 +215,7 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
                             fontSize: 18,
                             fontWeight: FontWeight.w600,
                             color:
-                                _locationDetected ? primaryGreen : textDark,
+                                _locationDetected ? primaryGreen : (isDark ? Colors.white : textDark),
                           ),
                         ),
                         const SizedBox(height: 8),
@@ -223,8 +224,8 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
                               ? lang.translate('location_detected_msg')
                               : lang.translate('allow_gps'),
                           textAlign: TextAlign.center,
-                          style: const TextStyle(
-                              fontSize: 14, color: textLight),
+                          style: TextStyle(
+                              fontSize: 14, color: isDark ? Colors.white70 : textLight),
                         ),
                         const SizedBox(height: 16),
                         if (!_locationDetected && !_useManualEntry)
@@ -255,7 +256,7 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
                             width: double.infinity,
                             padding: const EdgeInsets.all(12),
                             decoration: BoxDecoration(
-                              color: lightGreen.withOpacity(0.5),
+                              color: isDark ? primaryGreen.withOpacity(0.1) : lightGreen.withOpacity(0.5),
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Column(
@@ -263,15 +264,15 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
                               children: [
                                 Text(
                                   '${_cityController.text}, ${_stateController.text}',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w600,
-                                      color: textDark),
+                                      color: isDark ? Colors.white : textDark),
                                 ),
                                 Text(
                                   '${_countryController.text} - ${_pincodeController.text}',
-                                  style: const TextStyle(
-                                      fontSize: 14, color: textLight),
+                                  style: TextStyle(
+                                      fontSize: 14, color: isDark ? Colors.white70 : textLight),
                                 ),
                               ],
                             ),
@@ -289,12 +290,12 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         color:
-                            _useManualEntry ? lightGreen : Colors.white,
+                            _useManualEntry ? (isDark ? primaryGreen.withOpacity(0.2) : lightGreen) : (isDark ? const Color(0xFF1E1E1E) : Colors.white),
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(
                             color: _useManualEntry
                                 ? primaryGreen
-                                : Colors.grey.shade300,
+                                : (isDark ? Colors.white24 : Colors.grey.shade300),
                             width: _useManualEntry ? 2 : 1),
                       ),
                       child: Row(
@@ -312,7 +313,7 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
                                 fontWeight: FontWeight.w600,
                                 color: _useManualEntry
                                     ? primaryGreen
-                                    : textDark,
+                                    : (isDark ? Colors.white : textDark),
                               ),
                             ),
                           ),
@@ -338,13 +339,17 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
                         children: [
                           TextFormField(
                             controller: _cityController,
+                            style: TextStyle(color: isDark ? Colors.white : Colors.black87),
                             decoration: InputDecoration(
                               labelText: '${lang.translate("city_required").replaceAll(" is required", "")} *',
+                              labelStyle: TextStyle(color: isDark ? Colors.white70 : null),
                               prefixIcon: const Icon(Icons.location_city,
                                   color: primaryGreen),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
+                              filled: true,
+                              fillColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
                             ),
                             validator: (value) =>
                                 _validateField(lang, value, 'city_required'),

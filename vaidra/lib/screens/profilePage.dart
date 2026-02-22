@@ -129,6 +129,7 @@ class _ProfilePageState extends State<ProfilePage>
   }
 
   Widget _buildHeader(LanguageProvider lang) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return FadeTransition(
       opacity: _fadeAnimation,
       child: Container(
@@ -149,8 +150,8 @@ class _ProfilePageState extends State<ProfilePage>
             ),
             Text(
               lang.translate('profile'),
-              style: const TextStyle(
-                  fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black87),
+              style: TextStyle(
+                  fontSize: 24, fontWeight: FontWeight.bold, color: isDark ? Colors.white : Colors.black87),
             ),
             const SizedBox(width: 44),
           ],
@@ -262,18 +263,19 @@ class _ProfilePageState extends State<ProfilePage>
   }
 
   Widget _buildStatItem(IconData icon, String value, String label) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Column(
       children: [
         Icon(icon, color: mediumTeal, size: 24),
         const SizedBox(height: 8),
         Text(value,
             style: TextStyle(
-                fontSize: 20, fontWeight: FontWeight.bold, color: darkTeal)),
+                fontSize: 20, fontWeight: FontWeight.bold, color: isDark ? lightTeal : darkTeal)),
         const SizedBox(height: 4),
         Text(label,
             style: TextStyle(
                 fontSize: 12,
-                color: Colors.grey[600],
+                color: isDark ? Colors.white70 : Colors.grey[600],
                 fontWeight: FontWeight.w500)),
       ],
     );
@@ -330,13 +332,16 @@ class _ProfilePageState extends State<ProfilePage>
             _buildMenuCard([
               _buildMenuItem(Icons.help_outline, lang.translate('help_support'),
                   null,
-                  hasArrow: true),
+                  hasArrow: true,
+                  onTap: () => Navigator.pushNamed(context, '/help')),
               _buildMenuItem(Icons.privacy_tip_outlined,
                   lang.translate('privacy_policy'), null,
-                  hasArrow: true),
+                  hasArrow: true,
+                  onTap: () => Navigator.pushNamed(context, '/privacy')),
               _buildMenuItem(Icons.description_outlined,
                   lang.translate('terms_service'), null,
-                  hasArrow: true),
+                  hasArrow: true,
+                  onTap: () => Navigator.pushNamed(context, '/terms')),
             ]),
             OutlinedButton(
   onPressed: () {
@@ -349,7 +354,7 @@ class _ProfilePageState extends State<ProfilePage>
   },
   style: OutlinedButton.styleFrom(
     foregroundColor: Colors.green,
-    side: BorderSide(color: Colors.green!, width: 1.0),
+    side: const BorderSide(color: Colors.green, width: 1.0),
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
   ),
   child: Row(
@@ -359,10 +364,10 @@ class _ProfilePageState extends State<ProfilePage>
       const SizedBox(width: 10),
       Text(
         lang.translate('logout'),
-        style: const TextStyle(
+        style: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w600,
-          color: Colors.black,
+          color: Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black,
         ),
       ),
     ],
@@ -378,13 +383,16 @@ class _ProfilePageState extends State<ProfilePage>
   Widget _buildSectionTitle(String title) => Padding(
       padding: const EdgeInsets.only(bottom: 12),
       child: Text(title,
-          style: const TextStyle(
-              fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black87)));
+          style: TextStyle(
+              fontSize: 18, fontWeight: FontWeight.bold, color: Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black87)));
 
-  Widget _buildMenuCard(List<Widget> children) => Container(
+  Widget _buildMenuCard(List<Widget> children) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    return Container(
       decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(16)),
+          color: isDark ? const Color(0xFF1E1E1E) : Colors.white, borderRadius: BorderRadius.circular(16)),
       child: Column(children: children));
+  }
 
   Widget _buildMenuItem(
     IconData icon,
@@ -394,11 +402,13 @@ class _ProfilePageState extends State<ProfilePage>
     bool hasSwitch = false,
     bool switchValue = false,
     Function(bool)? onSwitchChanged,
+    VoidCallback? onTap,
   }) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Material(
       color: Colors.transparent,
       child: InkWell(
-        onTap: hasSwitch ? null : () {},
+        onTap: hasSwitch ? null : onTap ?? () {},
         borderRadius: BorderRadius.circular(16),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
@@ -416,20 +426,20 @@ class _ProfilePageState extends State<ProfilePage>
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(title,
-                        style: const TextStyle(
+                        style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
-                            color: Colors.black87)),
+                            color: isDark ? Colors.white : Colors.black87)),
                     if (value != null) ...[
                       const SizedBox(height: 4),
                       Text(value,
                           style: TextStyle(
-                              fontSize: 14, color: Colors.grey[600])),
+                              fontSize: 14, color: isDark ? Colors.white70 : Colors.grey[600])),
                     ]
                   ]),
             ),
             if (hasArrow)
-              Icon(Icons.arrow_forward_ios, size: 16, color: Colors.grey),
+              Icon(Icons.arrow_forward_ios, size: 16, color: isDark ? Colors.white54 : Colors.grey),
             if (hasSwitch)
               Switch(
                 value: switchValue,

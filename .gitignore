@@ -35,6 +35,7 @@ build/
 
 # Logs
 *.log
+*.txt
 gemini_pil_debug.log
 
 # OS files

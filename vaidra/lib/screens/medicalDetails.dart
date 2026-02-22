@@ -87,19 +87,20 @@ class _MedicalDetailsPageState extends State<MedicalDetailsPage> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Consumer<LanguageProvider>(builder: (context, lang, _) {
       return Scaffold(
-        backgroundColor: backgroundColor,
+        backgroundColor: isDark ? const Color(0xFF121212) : backgroundColor,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back, color: textDark),
+            icon: Icon(Icons.arrow_back, color: isDark ? Colors.white : textDark),
             onPressed: () => Navigator.pop(context),
           ),
           title: Text(lang.translate('medical_details'),
-              style: const TextStyle(
-                  color: textDark, fontSize: 20, fontWeight: FontWeight.w600)),
+              style: TextStyle(
+                  color: isDark ? Colors.white : textDark, fontSize: 20, fontWeight: FontWeight.w600)),
         ),
         body: SafeArea(
           child: SingleChildScrollView(
@@ -110,34 +111,37 @@ class _MedicalDetailsPageState extends State<MedicalDetailsPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(lang.translate('medical_details'),
-                      style: const TextStyle(
+                      style: TextStyle(
                           fontSize: 32,
                           fontWeight: FontWeight.bold,
-                          color: textDark)),
+                          color: isDark ? Colors.white : textDark)),
                   const SizedBox(height: 8),
                   Text(lang.translate('medical_subtitle'),
                       style:
-                          const TextStyle(fontSize: 16, color: textLight)),
+                          TextStyle(fontSize: 16, color: isDark ? Colors.white70 : textLight)),
                   const SizedBox(height: 40),
 
                   // Age Field
                   Text(lang.translate('age'),
-                      style: const TextStyle(
+                      style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w600,
-                          color: textDark)),
+                          color: isDark ? Colors.white : textDark)),
                   const SizedBox(height: 8),
                   TextFormField(
                     controller: _ageController,
                     keyboardType: TextInputType.number,
+                    style: TextStyle(color: isDark ? Colors.white : Colors.black87),
                     decoration: InputDecoration(
                       hintText: lang.translate('enter_age'),
+                      hintStyle: TextStyle(color: isDark ? Colors.white38 : null),
                       prefixIcon:
                           const Icon(Icons.cake, color: primaryGreen),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12)),
                       filled: true,
-                      fillColor: Colors.white,
+                      fillColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+                      labelStyle: TextStyle(color: isDark ? Colors.white70 : null),
                     ),
                     validator: (val) => _validateAge(lang, val),
                   ),
@@ -145,20 +149,20 @@ class _MedicalDetailsPageState extends State<MedicalDetailsPage> {
 
                   // Gender
                   Text(lang.translate('gender'),
-                      style: const TextStyle(
+                      style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w600,
-                          color: textDark)),
+                          color: isDark ? Colors.white : textDark)),
                   const SizedBox(height: 12),
                   Container(
                     decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
                         borderRadius: BorderRadius.circular(12),
-                        border: Border.all(color: Colors.grey.shade300)),
+                        border: Border.all(color: isDark ? Colors.white24 : Colors.grey.shade300)),
                     child: Column(
                       children: _genderOptionsKeys.map((key) {
                         return RadioListTile<String>(
-                          title: Text(lang.translate(key)),
+                          title: Text(lang.translate(key), style: TextStyle(color: isDark ? Colors.white : Colors.black87)),
                           value: key,
                           groupValue: _selectedGender,
                           activeColor: primaryGreen,
@@ -184,9 +188,9 @@ class _MedicalDetailsPageState extends State<MedicalDetailsPage> {
                   const SizedBox(height: 12),
                   Container(
                     decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
                         borderRadius: BorderRadius.circular(12),
-                        border: Border.all(color: Colors.grey.shade300)),
+                        border: Border.all(color: isDark ? Colors.white24 : Colors.grey.shade300)),
                     padding: const EdgeInsets.all(16),
                     child: Wrap(
                       spacing: 8,
@@ -200,11 +204,11 @@ class _MedicalDetailsPageState extends State<MedicalDetailsPage> {
                           onSelected: (_) => setState(() {
                             _toggleCondition(condition);
                           }),
-                          backgroundColor: Colors.grey.shade100,
-                          selectedColor: lightGreen,
+                          backgroundColor: isDark ? Colors.white12 : Colors.grey.shade100,
+                          selectedColor: isDark ? primaryGreen.withOpacity(0.3) : lightGreen,
                           checkmarkColor: primaryGreen,
                           labelStyle: TextStyle(
-                              color: isSelected ? primaryGreen : textDark),
+                              color: isSelected ? primaryGreen : (isDark ? Colors.white70 : textDark)),
                         );
                       }).toList(),
                     ),
@@ -225,8 +229,10 @@ class _MedicalDetailsPageState extends State<MedicalDetailsPage> {
                   TextFormField(
                     controller: _allergiesController,
                     maxLines: 3,
+                    style: TextStyle(color: isDark ? Colors.white : Colors.black87),
                     decoration: InputDecoration(
                       hintText: lang.translate('allergies_examples'),
+                      hintStyle: TextStyle(color: isDark ? Colors.white38 : null),
                       prefixIcon: const Padding(
                         padding: EdgeInsets.only(bottom: 48),
                         child: Icon(Icons.warning_amber,
@@ -235,7 +241,7 @@ class _MedicalDetailsPageState extends State<MedicalDetailsPage> {
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12)),
                       filled: true,
-                      fillColor: Colors.white,
+                      fillColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
                     ),
                   ),
                   const SizedBox(height: 32),

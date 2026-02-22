@@ -40,19 +40,16 @@ class _WelcomePageState extends State<WelcomePage> with TickerProviderStateMixin
     super.dispose();
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Consumer<LanguageProvider>(
-      builder: (context, lang, _) {
+        final isDark = themeInstance.brightness == Brightness.dark;
         if (lang.isLoading) {
           return Scaffold(
-            backgroundColor: Color(0xFFE9F5EF),
+            backgroundColor: isDark ? const Color(0xFF121212) : const Color(0xFFE9F5EF),
             body: Center(child: CircularProgressIndicator(color: darkTeal)),
           );
         }
 
         return Scaffold(
-          backgroundColor: Color(0xFFE9F5EF),
+          backgroundColor: isDark ? const Color(0xFF121212) : const Color(0xFFE9F5EF),
           body: SafeArea(
             child: SingleChildScrollView(
               padding: const EdgeInsets.symmetric(horizontal: 24.0),
@@ -80,6 +77,7 @@ class _WelcomePageState extends State<WelcomePage> with TickerProviderStateMixin
                                 isDense: true,
                                 icon: Icon(Icons.keyboard_arrow_down, size: 16, color: darkTeal),
                                 style: TextStyle(color: darkTeal, fontSize: 12, fontWeight: FontWeight.w500),
+                                dropdownColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
                                 items: [
                                   DropdownMenuItem(value: 'English', child: Text(lang.translate('english'))),
                                   DropdownMenuItem(value: 'Tamil', child: Text(lang.translate('tamil'))),
@@ -102,7 +100,7 @@ class _WelcomePageState extends State<WelcomePage> with TickerProviderStateMixin
                     opacity: _fadeAnimation,
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 40),
-                      child: Text(lang.translate('Welcome!!'), style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.black87)),
+                      child: Text(lang.translate('Welcome!!'), style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: isDark ? Colors.white : Colors.black87)),
                     ),
                   ),
                   // --- Large logo centered ---
@@ -159,7 +157,7 @@ class _WelcomePageState extends State<WelcomePage> with TickerProviderStateMixin
                                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(28)),
                               ),
                               icon: const Icon(Icons.facebook, size: 20),
-                              label: Text(lang.translate('continue_facebook'), style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+                              label: Text(lang.translate('continue_facebook'), style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: isDark ? const Color(0xFF1877F2) : const Color(0xFF1877F2))),
                             ),
                           ),
                           const SizedBox(height: 16),
@@ -179,7 +177,7 @@ class _WelcomePageState extends State<WelcomePage> with TickerProviderStateMixin
                                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(4), color: mediumTeal),
                                 child: const Icon(Icons.g_mobiledata, size: 16, color: Colors.white),
                               ),
-                              label: Text(lang.translate('continue_google'), style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+                              label: Text(lang.translate('continue_google'), style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: isDark ? Colors.white : mediumTeal)),
                             ),
                           ),
                         ],
@@ -194,7 +192,7 @@ class _WelcomePageState extends State<WelcomePage> with TickerProviderStateMixin
                       child: Text(
                         lang.translate('terms'),
                         textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.grey[600], fontSize: 12, height: 1.4),
+                        style: TextStyle(color: isDark ? Colors.white70 : Colors.grey[600], fontSize: 12, height: 1.4),
                       ),
                     ),
                   ),

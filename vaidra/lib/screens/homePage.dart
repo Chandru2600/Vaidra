@@ -72,7 +72,12 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> _takePhoto() async {
     final picker = ImagePicker();
-    final pickedFile = await picker.pickImage(source: ImageSource.camera);
+    final pickedFile = await picker.pickImage(
+      source: ImageSource.camera,
+      maxWidth: 1024,
+      maxHeight: 1024,
+      imageQuality: 70,
+    );
     
     if (pickedFile != null) {
       _processImage(pickedFile);
@@ -81,7 +86,12 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> _selectFromGallery() async {
     final picker = ImagePicker();
-    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
+    final pickedFile = await picker.pickImage(
+      source: ImageSource.gallery,
+      maxWidth: 1024,
+      maxHeight: 1024,
+      imageQuality: 70,
+    );
     
     if (pickedFile != null) {
       _processImage(pickedFile);
@@ -127,13 +137,16 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _showUploadOptions(LanguageProvider lang) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+    
     showModalBottomSheet(
       context: context,
       backgroundColor: Colors.transparent,
       builder: (context) => Container(
-        decoration: const BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+        decoration: BoxDecoration(
+          color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
         ),
         padding: const EdgeInsets.all(20),
         child: Column(
@@ -141,9 +154,9 @@ class _HomePageState extends State<HomePage> {
           children: [
             Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.grey.shade300, borderRadius: BorderRadius.circular(2))),
             const SizedBox(height: 20),
-            Text(lang.translate('upload_medical_image'), style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: textDark)),
+            Text(lang.translate('upload_medical_image'), style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: isDark ? Colors.white : textDark)),
             const SizedBox(height: 8),
-            Text(lang.translate('choose_upload'), textAlign: TextAlign.center, style: const TextStyle(fontSize: 14, color: textLight)),
+            Text(lang.translate('choose_upload'), textAlign: TextAlign.center, style: TextStyle(fontSize: 14, color: isDark ? Colors.white70 : textLight)),
             const SizedBox(height: 24),
 
             ListTile(
@@ -185,11 +198,14 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
     return Consumer<LanguageProvider>(builder: (context, lang, _) {
       return Scaffold(
-        backgroundColor: backgroundColor,
+        backgroundColor: isDark ? const Color(0xFF121212) : backgroundColor,
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
           elevation: 0,
           title: Row(
             children: [
@@ -197,12 +213,12 @@ class _HomePageState extends State<HomePage> {
                 child: Image.asset('assets/translations/vaidra.png', width: 18, height: 18, color: Colors.white),
               ),
               const SizedBox(width: 8),
-              const Text('Vaidra', style: TextStyle(color: textDark, fontSize: 20, fontWeight: FontWeight.w600)),
+              Text('Vaidra', style: TextStyle(color: isDark ? Colors.white : textDark, fontSize: 20, fontWeight: FontWeight.w600)),
             ],
           ),
           actions: [
-            IconButton(icon: const Icon(Icons.notifications_outlined, color: textDark), onPressed: () {}),
-            IconButton(icon: const Icon(Icons.person_outline, color: textDark), onPressed: () => Navigator.pushNamed(context, '/profile')),
+            IconButton(icon: Icon(Icons.notifications_outlined, color: isDark ? Colors.white : textDark), onPressed: () {}),
+            IconButton(icon: Icon(Icons.person_outline, color: isDark ? Colors.white : textDark), onPressed: () => Navigator.pushNamed(context, '/profile')),
           ],
         ),
         body: _isUploading ? _buildUploadingScreen(lang) : _buildMainContent(lang),
@@ -227,9 +243,9 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         const SizedBox(height: 24),
-        Text(lang.translate('processing_image'), style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: textDark)),
+        Text(lang.translate('processing_image'), style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: isDark ? Colors.white : textDark)),
         const SizedBox(height: 8),
-        Text(lang.translate('analyzing_ai'), style: const TextStyle(fontSize: 16, color: textLight)),
+        Text(lang.translate('analyzing_ai'), style: TextStyle(fontSize: 16, color: isDark ? Colors.white70 : textLight)),
       ]),
     );
   }
@@ -246,9 +262,9 @@ class _HomePageState extends State<HomePage> {
             borderRadius: BorderRadius.circular(16),
           ),
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text(lang.translate('home_title'), style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: textDark)),
+            Text(lang.translate('home_title'), style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: isDark ? Colors.white : textDark)),
             const SizedBox(height: 8),
-            Text(lang.translate('home_subtitle'), style: const TextStyle(fontSize: 16, color: textLight)),
+            Text(lang.translate('home_subtitle'), style: TextStyle(fontSize: 16, color: isDark ? Colors.white70 : textLight)),
             const SizedBox(height: 20),
             Row(children: [
               Expanded(child: _buildQuickActionCard(lang, Icons.camera_alt, 'take_photo', 'camera', _takePhoto)),
@@ -258,7 +274,7 @@ class _HomePageState extends State<HomePage> {
           ]),
         ),
         const SizedBox(height: 32),
-        Text(lang.translate('what_can_upload'), style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: textDark)),
+        Text(lang.translate('what_can_upload'), style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: isDark ? Colors.white : textDark)),
         const SizedBox(height: 16),
         Row(children: [
           Expanded(child: _buildUploadTypeCard(lang, Icons.description, 'lab_reports', 'blood_urine')),
@@ -273,9 +289,9 @@ class _HomePageState extends State<HomePage> {
         ]),
         const SizedBox(height: 32),
         Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-          Text(lang.translate('recent_uploads'), style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: textDark)),
+          Text(lang.translate('recent_uploads'), style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: isDark ? Colors.white : textDark)),
           TextButton(onPressed: () => Navigator.pushNamed(context, '/history'),
-            child: Text(lang.translate('view_all'), style: const TextStyle(color: primaryGreen, fontWeight: FontWeight.w200)),
+            child: Text(lang.translate('view_all'), style: const TextStyle(color: primaryGreen, fontWeight: FontWeight.w600)),
           ),
         ]),
         const SizedBox(height: 16),
@@ -294,44 +310,47 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildQuickActionCard(LanguageProvider lang, IconData icon, String titleKey, String subtitleKey, VoidCallback onTap) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return GestureDetector(onTap: onTap,
       child: Container(
         padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12), boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 2))]),
+        decoration: BoxDecoration(color: isDark ? const Color(0xFF1E1E1E) : Colors.white, borderRadius: BorderRadius.circular(12), boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 2))]),
         child: Column(children: [
           Icon(icon, color: primaryGreen, size: 32),
           const SizedBox(height: 8),
-          Text(lang.translate(titleKey), style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: textDark)),
-          Text(lang.translate(subtitleKey), style: const TextStyle(fontSize: 12, color: textLight)),
+          Text(lang.translate(titleKey), style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: isDark ? Colors.white : textDark)),
+          Text(lang.translate(subtitleKey), style: TextStyle(fontSize: 12, color: isDark ? Colors.white70 : textLight)),
         ]),
       ),
     );
   }
 
   Widget _buildUploadTypeCard(LanguageProvider lang, IconData icon, String titleKey, String subtitleKey) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Container(
       padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12), boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 2))]),
+      decoration: BoxDecoration(color: isDark ? const Color(0xFF1E1E1E) : Colors.white, borderRadius: BorderRadius.circular(12), boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 2))]),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Icon(icon, color: primaryGreen, size: 28),
         const SizedBox(height: 12),
-        Text(lang.translate(titleKey), style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: textDark)),
-        Text(lang.translate(subtitleKey), style: const TextStyle(fontSize: 12, color: textLight)),
+        Text(lang.translate(titleKey), style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: isDark ? Colors.white : textDark)),
+        Text(lang.translate(subtitleKey), style: TextStyle(fontSize: 12, color: isDark ? Colors.white70 : textLight)),
       ]),
     );
   }
 
   Widget _buildEmptyHistory(LanguageProvider lang) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(32),
-      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+      decoration: BoxDecoration(color: isDark ? const Color(0xFF1E1E1E) : Colors.white, borderRadius: BorderRadius.circular(16)),
       child: Column(children: [
-        Icon(Icons.history, size: 64, color: Colors.grey.shade300),
+        Icon(Icons.history, size: 64, color: isDark ? Colors.white24 : Colors.grey.shade300),
         const SizedBox(height: 16),
-        Text(lang.translate('no_uploads_yet'), style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: Colors.grey.shade600)),
+        Text(lang.translate('no_uploads_yet'), style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: isDark ? Colors.white70 : Colors.grey.shade600)),
         const SizedBox(height: 8),
-        Text(lang.translate('upload_first_image'), textAlign: TextAlign.center, style: TextStyle(fontSize: 14, color: Colors.grey.shade500)),
+        Text(lang.translate('upload_first_image'), textAlign: TextAlign.center, style: TextStyle(fontSize: 14, color: isDark ? Colors.white60 : Colors.grey.shade500)),
       ]),
     );
   }
@@ -351,6 +370,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildHistoryCard(HistoryItem item) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Container(
       margin: const EdgeInsets.only(bottom: 12),
       child: InkWell(
@@ -358,18 +378,18 @@ class _HomePageState extends State<HomePage> {
         borderRadius: BorderRadius.circular(12),
         child: Container(
           padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12), boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 2))]),
+          decoration: BoxDecoration(color: isDark ? const Color(0xFF1E1E1E) : Colors.white, borderRadius: BorderRadius.circular(12), boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 2))]),
           child: Row(children: [
-            Container(width: 50, height: 50, decoration: BoxDecoration(color: lightGreen, borderRadius: BorderRadius.circular(8)),
-              child: const Icon(Icons.insert_drive_file, color: primaryGreen, size: 24),
+            Container(width: 50, height: 50, decoration: BoxDecoration(color: isDark ? primaryGreen.withOpacity(0.2) : lightGreen, borderRadius: BorderRadius.circular(8)),
+              child: Icon(Icons.insert_drive_file, color: primaryGreen, size: 24),
             ),
             const SizedBox(width: 12),
             Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(item.title, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: textDark)),
+              Text(item.title, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: isDark ? Colors.white : textDark)),
               const SizedBox(height: 4),
-              Text(item.result, style: const TextStyle(fontSize: 14, color: textLight), maxLines: 1, overflow: TextOverflow.ellipsis),
+              Text(item.result, style: TextStyle(fontSize: 14, color: isDark ? Colors.white70 : textLight), maxLines: 1, overflow: TextOverflow.ellipsis),
               const SizedBox(height: 4),
-              Text(_formatDate(item.uploadDate), style: TextStyle(fontSize: 12, color: Colors.grey.shade500)),
+              Text(_formatDate(item.uploadDate), style: TextStyle(fontSize: 12, color: isDark ? Colors.white54 : Colors.grey.shade500)),
             ])),
             Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
               Container(
@@ -378,7 +398,7 @@ class _HomePageState extends State<HomePage> {
                 child: Text(item.status, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: item.status == 'Analyzed' ? primaryGreen : Colors.orange.shade800)),
               ),
               const SizedBox(height: 8),
-              const Icon(Icons.chevron_right, color: textLight, size: 20),
+              Icon(Icons.chevron_right, color: isDark ? Colors.white54 : textLight, size: 20),
             ]),
           ]),
         ),

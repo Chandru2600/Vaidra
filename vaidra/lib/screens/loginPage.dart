@@ -44,10 +44,11 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Consumer<LanguageProvider>(
       builder: (context, lang, _) {
         return Scaffold(
-          backgroundColor: kBgLight,
+          backgroundColor: isDark ? const Color(0xFF121212) : kBgLight,
           body: Center(
             child: SingleChildScrollView(
               child: Padding(
@@ -56,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
                   width: double.infinity,
                   padding: const EdgeInsets.symmetric(vertical: 36, horizontal: 28),
                   decoration: BoxDecoration(
-                    color: kCardWhite,
+                    color: isDark ? const Color(0xFF1E1E1E) : kCardWhite,
                     borderRadius: BorderRadius.circular(24),
                     boxShadow: [
                       BoxShadow(
@@ -97,12 +98,14 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         SizedBox(height: 20),
                         TextFormField(
+                          style: TextStyle(color: isDark ? Colors.white : Colors.black87),
                           decoration: InputDecoration(
                             labelText: lang.translate('email_or_phone'),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10.0),
                             ),
-                            prefixIcon: Icon(Icons.person),
+                            prefixIcon: Icon(Icons.person, color: isDark ? Colors.white70 : null),
+                            labelStyle: TextStyle(color: isDark ? Colors.white70 : null),
                           ),
                           keyboardType: TextInputType.emailAddress,
                           validator: (value) =>
@@ -111,15 +114,18 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         SizedBox(height: 18),
                         TextFormField(
+                          style: TextStyle(color: isDark ? Colors.white : Colors.black87),
                           decoration: InputDecoration(
                             labelText: lang.translate('password'),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10.0),
                             ),
-                            prefixIcon: Icon(Icons.lock),
+                            prefixIcon: Icon(Icons.lock, color: isDark ? Colors.white70 : null),
+                            labelStyle: TextStyle(color: isDark ? Colors.white70 : null),
                             suffixIcon: IconButton(
                               icon: Icon(
-                                  obscure ? Icons.visibility_off : Icons.visibility),
+                                  obscure ? Icons.visibility_off : Icons.visibility,
+                                  color: isDark ? Colors.white70 : null),
                               onPressed: () {
                                 setState(() => obscure = !obscure);
                               },
@@ -180,7 +186,7 @@ class _LoginPageState extends State<LoginPage> {
                           children: [
                             Text(
                               lang.translate('new_user') + " ",
-                              style: TextStyle(fontSize: 16),
+                              style: TextStyle(fontSize: 16, color: isDark ? Colors.white70 : Colors.black87),
                             ),
                             GestureDetector(
                               onTap: () {

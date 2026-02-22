@@ -49,15 +49,16 @@ class ResultsScreen extends StatelessWidget {
     }
   }
 
-  @override
-  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
+      backgroundColor: isDark ? const Color(0xFF121212) : null,
       appBar: AppBar(title: Text(tr("results"))),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16),
         child: Column(
           children: [
             Card(
+              color: isDark ? const Color(0xFF1E1E1E) : null,
               child: Column(
                 children: [
                   FutureBuilder<dynamic>(
@@ -75,8 +76,8 @@ class ResultsScreen extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: Text(condition),
-                    subtitle: Text("${tr("confidence")}: $confidence%"),
+                    title: Text(condition, style: TextStyle(color: isDark ? Colors.white : null)),
+                    subtitle: Text("${tr("confidence")}: $confidence%", style: TextStyle(color: isDark ? Colors.white70 : null)),
                     trailing: Chip(
                       label: Text("${tr('severity')}: $severity"),
                       backgroundColor: _sevColor(severity),
@@ -88,75 +89,76 @@ class ResultsScreen extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Card(
+              color: isDark ? const Color(0xFF1E1E1E) : null,
               child: ListTile(
-                title: Text(tr("first_aid")),
+                title: Text(tr("first_aid"), style: TextStyle(color: isDark ? Colors.white : null)),
                 subtitle: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: steps.isNotEmpty 
-                    ? steps.map((s) => Text("• $s")).toList()
-                    : [Text("No specific steps provided. Consult a doctor.")]
+                    ? steps.map((s) => Text("• $s", style: TextStyle(color: isDark ? Colors.white70 : null))).toList()
+                    : [Text("No specific steps provided. Consult a doctor.", style: TextStyle(color: isDark ? Colors.white70 : null))]
                 ),
               ),
             ),
             Card(
-              color: Colors.red.shade50,
+              color: isDark ? Colors.red.shade900.withOpacity(0.2) : Colors.red.shade50,
               child: ListTile(
                 title: Text(
                   tr("watch_signs"),
-                  style: TextStyle(color: Colors.red),
+                  style: TextStyle(color: isDark ? Colors.redAccent : Colors.red),
                 ),
                 subtitle: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: warnings.isNotEmpty
-                    ? warnings.map((w) => Text("• $w")).toList()
-                    : [Text("Monitor for worsening symptoms.")]
+                    ? warnings.map((w) => Text("• $w", style: TextStyle(color: isDark ? Colors.white70 : null))).toList()
+                    : [Text("Monitor for worsening symptoms.", style: TextStyle(color: isDark ? Colors.white70 : null))]
                 ),
               ),
             ),
             Card(
-              color: Colors.blue.shade50,
+              color: isDark ? Colors.blue.shade900.withOpacity(0.2) : Colors.blue.shade50,
               child: Column(
                 children: [
                   ListTile(
-                    leading: Icon(Icons.local_hospital, color: Colors.blue.shade900),
+                    leading: Icon(Icons.local_hospital, color: isDark ? Colors.blueAccent : Colors.blue.shade900),
                     title: Text(
                       tr("nearby_hospitals"),
-                      style: TextStyle(color: Colors.blue.shade900, fontWeight: FontWeight.bold),
+                      style: TextStyle(color: isDark ? Colors.blueAccent : Colors.blue.shade900, fontWeight: FontWeight.bold),
                     ),
-                    subtitle: Text("Find hospitals near your location"),
-                    trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Colors.blue.shade900),
+                    subtitle: Text("Find hospitals near your location", style: TextStyle(color: isDark ? Colors.white70 : null)),
+                    trailing: Icon(Icons.arrow_forward_ios, size: 16, color: isDark ? Colors.blueAccent : Colors.blue.shade900),
                     onTap: () => _call("https://www.google.com/maps/search/?api=1&query=hospitals+near+me"),
                   ),
                 ],
               ),
             ),
             Card(
-              color: Colors.red.shade50,
+              color: isDark ? Colors.red.shade900.withOpacity(0.2) : Colors.red.shade50,
               child: Column(
                 children: [
                   ListTile(
-                    leading: Icon(Icons.emergency, color: Colors.red.shade900),
+                    leading: Icon(Icons.emergency, color: isDark ? Colors.redAccent : Colors.red.shade900),
                     title: Text(
                       tr("ambulance_numbers"),
-                      style: TextStyle(color: Colors.red.shade900, fontWeight: FontWeight.bold),
+                      style: TextStyle(color: isDark ? Colors.redAccent : Colors.red.shade900, fontWeight: FontWeight.bold),
                     ),
                   ),
                   ListTile(
-                    title: Text("National Ambulance"),
-                    subtitle: Text("102"),
-                    trailing: Icon(Icons.call, color: Colors.red),
+                    title: Text("National Ambulance", style: TextStyle(color: isDark ? Colors.white : null)),
+                    subtitle: Text("102", style: TextStyle(color: isDark ? Colors.white70 : null)),
+                    trailing: Icon(Icons.call, color: isDark ? Colors.redAccent : Colors.red),
                     onTap: () => _call("102"),
                   ),
                    ListTile(
-                    title: Text("Emergency Response"),
-                    subtitle: Text("108"),
-                    trailing: Icon(Icons.call, color: Colors.red),
+                    title: Text("Emergency Response", style: TextStyle(color: isDark ? Colors.white : null)),
+                    subtitle: Text("108", style: TextStyle(color: isDark ? Colors.white70 : null)),
+                    trailing: Icon(Icons.call, color: isDark ? Colors.redAccent : Colors.red),
                     onTap: () => _call("108"),
                   ),
-                  Divider(),
+                  Divider(color: isDark ? Colors.white24 : null),
                   ListTile(
-                    title: Text("Find Ambulance Nearby"),
-                    trailing: Icon(Icons.map, color: Colors.red),
+                    title: Text("Find Ambulance Nearby", style: TextStyle(color: isDark ? Colors.white : null)),
+                    trailing: Icon(Icons.map, color: isDark ? Colors.redAccent : Colors.red),
                     onTap: () => _call("https://www.google.com/maps/search/?api=1&query=ambulance+near+me"),
                   ),
                 ],

@@ -9,8 +9,9 @@ import 'package:vaidra/screens/profilePage.dart';
 import 'package:vaidra/screens/register.dart';
 import 'package:vaidra/screens/welcomePage.dart';
 import 'package:vaidra/screens/historyPage.dart';
-import 'screens/language_provider.dart';
-import 'providers/theme_provider.dart';
+import 'screens/help_support_page.dart';
+import 'screens/privacy_policy_page.dart';
+import 'screens/terms_service_page.dart';
 
 void main() {
   runApp(
@@ -56,6 +57,9 @@ class MyApp extends StatelessWidget {
             '/home': (context) => HomePage(),
             '/profile': (context) => ProfilePage(),
             '/history': (context) => HistoryPage(),
+            '/help': (context) => const HelpSupportPage(),
+            '/privacy': (context) => const PrivacyPolicyPage(),
+            '/terms': (context) => const TermsServicePage(),
           },
         );
       },

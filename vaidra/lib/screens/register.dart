@@ -82,10 +82,11 @@ class _RegisterPageState extends State<RegisterPage> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Consumer<LanguageProvider>(
       builder: (context, lang, _) {
         return Scaffold(
-          backgroundColor: backgroundColor,
+          backgroundColor: isDark ? const Color(0xFF121212) : backgroundColor,
           appBar: AppBar(
             backgroundColor: Colors.transparent,
             elevation: 0,
@@ -110,10 +111,10 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                 ),
                 const SizedBox(width: 8),
-                const Text(
+                Text(
                   'Vaidra',
                   style: TextStyle(
-                    color: textDark,
+                    color: isDark ? Colors.white : textDark,
                     fontSize: 20,
                     fontWeight: FontWeight.w600,
                   ),
@@ -146,18 +147,18 @@ class _RegisterPageState extends State<RegisterPage> {
                     const SizedBox(height: 20),
                     Text(
                       lang.translate('create_account'),
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 32,
                         fontWeight: FontWeight.bold,
-                        color: textDark,
+                        color: isDark ? Colors.white : textDark,
                       ),
                     ),
                     const SizedBox(height: 8),
                     Text(
                       lang.translate('join_vaidra'),
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 16,
-                        color: textLight,
+                        color: isDark ? Colors.white70 : textLight,
                       ),
                     ),
                     const SizedBox(height: 40),
@@ -165,20 +166,22 @@ class _RegisterPageState extends State<RegisterPage> {
                     // Name Field
                     TextFormField(
                       controller: _nameController,
-                      decoration: InputDecoration(
-                        labelText: lang.translate('full_name'),
-                        prefixIcon: const Icon(Icons.person_outline, color: primaryGreen),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
-                          borderSide: BorderSide(color: Colors.grey.shade300),
+                        style: TextStyle(color: isDark ? Colors.white : Colors.black87),
+                        decoration: InputDecoration(
+                          labelText: lang.translate('full_name'),
+                          prefixIcon: const Icon(Icons.person_outline, color: primaryGreen),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12),
+                            borderSide: BorderSide(color: Colors.grey.shade300),
+                          ),
+                          focusedBorder: const OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(12)),
+                            borderSide: BorderSide(color: primaryGreen, width: 2),
+                          ),
+                          filled: true,
+                          fillColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+                          labelStyle: TextStyle(color: isDark ? Colors.white70 : null),
                         ),
-                        focusedBorder: const OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(12)),
-                          borderSide: BorderSide(color: primaryGreen, width: 2),
-                        ),
-                        filled: true,
-                        fillColor: Colors.white,
-                      ),
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return lang.translate('name_required');
@@ -192,20 +195,22 @@ class _RegisterPageState extends State<RegisterPage> {
                     TextFormField(
                       controller: _emailController,
                       keyboardType: TextInputType.emailAddress,
-                      decoration: InputDecoration(
-                        labelText: lang.translate('email'),
-                        prefixIcon: const Icon(Icons.email_outlined, color: primaryGreen),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
-                          borderSide: BorderSide(color: Colors.grey.shade300),
+                        style: TextStyle(color: isDark ? Colors.white : Colors.black87),
+                        decoration: InputDecoration(
+                          labelText: lang.translate('email'),
+                          prefixIcon: const Icon(Icons.email_outlined, color: primaryGreen),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12),
+                            borderSide: BorderSide(color: Colors.grey.shade300),
+                          ),
+                          focusedBorder: const OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(12)),
+                            borderSide: BorderSide(color: primaryGreen, width: 2),
+                          ),
+                          filled: true,
+                          fillColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+                          labelStyle: TextStyle(color: isDark ? Colors.white70 : null),
                         ),
-                        focusedBorder: const OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(12)),
-                          borderSide: BorderSide(color: primaryGreen, width: 2),
-                        ),
-                        filled: true,
-                        fillColor: Colors.white,
-                      ),
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return lang.translate('email_required');
@@ -222,31 +227,33 @@ class _RegisterPageState extends State<RegisterPage> {
                     TextFormField(
                       controller: _passwordController,
                       obscureText: _obscurePassword,
-                      decoration: InputDecoration(
-                        labelText: lang.translate('password'),
-                        prefixIcon: const Icon(Icons.lock_outline, color: primaryGreen),
-                        suffixIcon: IconButton(
-                          icon: Icon(
-                            _obscurePassword ? Icons.visibility_off : Icons.visibility,
-                            color: primaryGreen,
+                        style: TextStyle(color: isDark ? Colors.white : Colors.black87),
+                        decoration: InputDecoration(
+                          labelText: lang.translate('password'),
+                          prefixIcon: const Icon(Icons.lock_outline, color: primaryGreen),
+                          suffixIcon: IconButton(
+                            icon: Icon(
+                              _obscurePassword ? Icons.visibility_off : Icons.visibility,
+                              color: primaryGreen,
+                            ),
+                            onPressed: () {
+                              setState(() {
+                                _obscurePassword = !_obscurePassword;
+                              });
+                            },
                           ),
-                          onPressed: () {
-                            setState(() {
-                              _obscurePassword = !_obscurePassword;
-                            });
-                          },
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12),
+                            borderSide: BorderSide(color: Colors.grey.shade300),
+                          ),
+                          focusedBorder: const OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(12)),
+                            borderSide: BorderSide(color: primaryGreen, width: 2),
+                          ),
+                          filled: true,
+                          fillColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+                          labelStyle: TextStyle(color: isDark ? Colors.white70 : null),
                         ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
-                          borderSide: BorderSide(color: Colors.grey.shade300),
-                        ),
-                        focusedBorder: const OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(12)),
-                          borderSide: BorderSide(color: primaryGreen, width: 2),
-                        ),
-                        filled: true,
-                        fillColor: Colors.white,
-                      ),
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return lang.translate('password_required');
@@ -263,31 +270,33 @@ class _RegisterPageState extends State<RegisterPage> {
                     TextFormField(
                       controller: _confirmPasswordController,
                       obscureText: _obscureConfirmPassword,
-                      decoration: InputDecoration(
-                        labelText: lang.translate('confirm_password'),
-                        prefixIcon: const Icon(Icons.lock_outline, color: primaryGreen),
-                        suffixIcon: IconButton(
-                          icon: Icon(
-                            _obscureConfirmPassword ? Icons.visibility_off : Icons.visibility,
-                            color: primaryGreen,
+                        style: TextStyle(color: isDark ? Colors.white : Colors.black87),
+                        decoration: InputDecoration(
+                          labelText: lang.translate('confirm_password'),
+                          prefixIcon: const Icon(Icons.lock_outline, color: primaryGreen),
+                          suffixIcon: IconButton(
+                            icon: Icon(
+                              _obscureConfirmPassword ? Icons.visibility_off : Icons.visibility,
+                              color: primaryGreen,
+                            ),
+                            onPressed: () {
+                              setState(() {
+                                _obscureConfirmPassword = !_obscureConfirmPassword;
+                              });
+                            },
                           ),
-                          onPressed: () {
-                            setState(() {
-                              _obscureConfirmPassword = !_obscureConfirmPassword;
-                            });
-                          },
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12),
+                            borderSide: BorderSide(color: Colors.grey.shade300),
+                          ),
+                          focusedBorder: const OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(12)),
+                            borderSide: BorderSide(color: primaryGreen, width: 2),
+                          ),
+                          filled: true,
+                          fillColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+                          labelStyle: TextStyle(color: isDark ? Colors.white70 : null),
                         ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
-                          borderSide: BorderSide(color: Colors.grey.shade300),
-                        ),
-                        focusedBorder: const OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(12)),
-                          borderSide: BorderSide(color: primaryGreen, width: 2),
-                        ),
-                        filled: true,
-                        fillColor: Colors.white,
-                      ),
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return lang.translate('confirm_password_required');
@@ -404,8 +413,8 @@ class _RegisterPageState extends State<RegisterPage> {
                         child: Text(
                           lang.translate('terms_conditions'),
                           textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            color: textLight,
+                          style: TextStyle(
+                            color: isDark ? Colors.white70 : textLight,
                             fontSize: 14,
                             decoration: TextDecoration.underline,
                           ),
