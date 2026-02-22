@@ -88,11 +88,14 @@ def analyze(scan_image: UploadFile = File(...), user_id: int = Form(None), db: S
 
 @router.get("/debug_models")
 def get_debug_models():
-    import google.generativeai as genai
+    import urllib.request, json
     from app.config import settings
     try:
-        genai.configure(api_key=settings.GEMINI_API_KEY)
-        models = [m.name for m in genai.list_models()]
+        api_key = settings.GEMINI_API_KEY
+        req = urllib.request.Request(f'https://generativelanguage.googleapis.com/v1beta/models?key={api_key}')
+        res = urllib.request.urlopen(req)
+        data = json.loads(res.read())
+        models = [m['name'] for m in data.get('models', [])]
         return {"models": models}
     except Exception as e:
         return {"error": str(e)}
