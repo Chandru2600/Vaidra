@@ -1,4 +1,5 @@
 from pydantic_settings import BaseSettings
+from pydantic import field_validator
 
 class Settings(BaseSettings):
     SECRET_KEY: str = "replace_this_with_a_strong_key"
@@ -14,6 +15,14 @@ class Settings(BaseSettings):
     S3_ACCESS_KEY: str = ""
     S3_SECRET_KEY: str = ""
     UPLOAD_DIR: str = "uploads"
+
+    # Render provides postgres:// but SQLAlchemy requires postgresql://
+    @field_validator("DATABASE_URL", mode="before")
+    @classmethod
+    def fix_postgres_url(cls, v: str) -> str:
+        if v.startswith("postgres://"):
+            return v.replace("postgres://", "postgresql://", 1)
+        return v
 
     class Config:
         env_file = (".env", "../.env", "../../.env")
