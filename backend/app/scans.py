@@ -85,3 +85,14 @@ def analyze(scan_image: UploadFile = File(...), user_id: int = Form(None), db: S
             warnings=scan.warnings.split("|") if scan.warnings else []
         )
     )
+
+@router.get("/debug_models")
+def get_debug_models():
+    import google.generativeai as genai
+    from app.config import settings
+    try:
+        genai.configure(api_key=settings.GEMINI_API_KEY)
+        models = [m.name for m in genai.list_models()]
+        return {"models": models}
+    except Exception as e:
+        return {"error": str(e)}
