@@ -14,10 +14,6 @@ depends_on = None
 
 
 def upgrade() -> None:
-    # Create severity enum type
-    severity_enum = sa.Enum('MINOR', 'MODERATE', 'URGENT', name='severity')
-    severity_enum.create(op.get_bind(), checkfirst=True)
-
     # Create users table
     op.create_table(
         'users',
@@ -39,7 +35,10 @@ def upgrade() -> None:
     op.create_index('ix_users_email', 'users', ['email'], unique=True)
     op.create_index('ix_users_id', 'users', ['id'], unique=False)
 
-    # Create scans table
+    # Create severity enum type explicitly first
+    op.execute("CREATE TYPE severity AS ENUM ('MINOR', 'MODERATE', 'URGENT')")
+
+    # Create scans table — reference existing enum with create_type=False
     op.create_table(
         'scans',
         sa.Column('id', sa.Integer(), nullable=False),
@@ -48,7 +47,7 @@ def upgrade() -> None:
         sa.Column('s3_key', sa.String(), nullable=True),
         sa.Column('condition', sa.String(), nullable=True),
         sa.Column('confidence', sa.Float(), nullable=True),
-        sa.Column('severity', sa.Enum('MINOR', 'MODERATE', 'URGENT', name='severity'), nullable=True),
+        sa.Column('severity', sa.Enum('MINOR', 'MODERATE', 'URGENT', name='severity', create_type=False), nullable=True),
         sa.Column('steps', sa.Text(), nullable=True),
         sa.Column('warnings', sa.Text(), nullable=True),
         sa.Column('notes', sa.Text(), nullable=True),
@@ -63,4 +62,4 @@ def upgrade() -> None:
 def downgrade() -> None:
     op.drop_table('scans')
     op.drop_table('users')
-    sa.Enum(name='severity').drop(op.get_bind(), checkfirst=True)
+    op.execute("DROP TYPE IF EXISTS severity")
