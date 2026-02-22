@@ -17,8 +17,12 @@ if database_url.startswith("postgres://"):
     database_url = database_url.replace("postgres://", "postgresql://", 1)
 config.set_main_option("sqlalchemy.url", database_url)
 
-# Interpret the config file for Python logging.
-fileConfig(config.config_file_name)
+# Interpret the config file for Python logging (optional — skip if config is minimal)
+try:
+    if config.config_file_name:
+        fileConfig(config.config_file_name)
+except Exception:
+    pass
 
 target_metadata = Base.metadata
 
