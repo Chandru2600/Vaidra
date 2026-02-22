@@ -42,7 +42,18 @@ def analyze_image(file_path: str):
         response = model.generate_content([prompt, img])
         print("Response received from Gemini.")
         
-        content = response.text
+        try:
+            content = response.text
+        except Exception as e:
+            print(f"Gemini response has no text (likely safety filter): {e}")
+            return {
+                "condition": "Analysis block by AI safety filters",
+                "confidence": 0.0,
+                "severity": "MINOR",
+                "steps": ["Consult a real doctor as AI cannot analyze this image.", "Ensure the image is clear."],
+                "warnings": ["AI refused to analyze image."]
+            }
+            
         # Strip markdown if present
         if content.startswith("```json"):
             content = content.replace("```json", "").replace("```", "")
@@ -55,8 +66,12 @@ def analyze_image(file_path: str):
     except Exception as e:
         print(f"CRITICAL ERROR in analyze_image: {e}")
         traceback.print_exc()
-        # Return a fallback error structure to avoid 500 if possible, 
-        # or just re-raise to let FastAPI handle it (which returns 500).
-        # Re-raising is better so we see the 500 status code but now we have logs.
-        raise e
+        # Fallback to prevent 500 error
+        return {
+            "condition": "AI Service Error",
+            "confidence": 0.0,
+            "severity": "MINOR",
+            "steps": ["AI analysis failed.", "Please try again later."],
+            "warnings": [str(e)]
+        }
 
