@@ -41,8 +41,14 @@ def upgrade() -> None:
         op.create_index('ix_users_email', 'users', ['email'], unique=True)
         op.create_index('ix_users_id', 'users', ['id'], unique=False)
 
-    # Create severity enum type (safe IF NOT EXISTS)
-    bind.execute(text("CREATE TYPE IF NOT EXISTS severity AS ENUM ('MINOR', 'MODERATE', 'URGENT')"))
+    # Create severity enum type safely (DO block handles duplicate gracefully)
+    bind.execute(text("""
+        DO $$ BEGIN
+            CREATE TYPE severity AS ENUM ('MINOR', 'MODERATE', 'URGENT');
+        EXCEPTION
+            WHEN duplicate_object THEN NULL;
+        END $$;
+    """))
 
     # Create scans table (only if it doesn't exist)
     if 'scans' not in existing_tables:
