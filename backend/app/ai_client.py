@@ -68,10 +68,10 @@ def analyze_image(file_path: str):
         traceback.print_exc()
         # Fallback to prevent 500 error
         return {
-            "condition": "AI Service Error",
+            "condition": f"AI Service Error: {str(e)[:50]}...",
             "confidence": 0.0,
             "severity": "MINOR",
-            "steps": ["AI analysis failed.", "Please try again later."],
+            "steps": ["AI analysis failed.", str(e)],
             "warnings": [str(e)]
         }
 
