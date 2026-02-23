@@ -16,9 +16,9 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.example.vaidra"
+    namespace = "com.healthcare.vaidra"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "25.1.8937393"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -30,10 +30,7 @@ android {
     }
 
     defaultConfig {
-        // Changed from com.example.vaidra to unique package name for Play Store
         applicationId = "com.healthcare.vaidra"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
