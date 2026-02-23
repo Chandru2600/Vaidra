@@ -86,19 +86,20 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Consumer<LanguageProvider>(builder: (context, lang, _) {
       return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: isDark ? const Color(0xFF121212) : Colors.white,
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
           elevation: 0,
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back_ios_new, color: Colors.black87),
+            icon: Icon(Icons.arrow_back_ios_new, color: isDark ? Colors.white : Colors.black87),
             onPressed: () => Navigator.pop(context),
           ),
           title: Text(
             lang.translate('edit_profile'),
-            style: const TextStyle(color: Colors.black87, fontWeight: FontWeight.bold),
+            style: TextStyle(color: isDark ? Colors.white : Colors.black87, fontWeight: FontWeight.bold),
           ),
         ),
         body: SingleChildScrollView(
@@ -210,59 +211,67 @@ class _EditProfilePageState extends State<EditProfilePage> {
     String? Function(String?)? validator,
     List<TextInputFormatter>? inputFormatters,
   }) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return TextFormField(
       controller: controller,
+      style: TextStyle(color: isDark ? Colors.white : Colors.black87),
       keyboardType: keyboardType,
       maxLines: maxLines,
       validator: validator,
       inputFormatters: inputFormatters,
       decoration: InputDecoration(
         labelText: label,
+        labelStyle: TextStyle(color: isDark ? Colors.white70 : Colors.black54),
         hintText: hint,
+        hintStyle: TextStyle(color: isDark ? Colors.white38 : Colors.black38),
         prefixIcon: Icon(icon, color: mediumTeal),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: lightTeal),
+          borderSide: BorderSide(color: isDark ? Colors.white24 : lightTeal),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: lightTeal),
+          borderSide: BorderSide(color: isDark ? Colors.white24 : lightTeal),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(color: mediumTeal, width: 2),
         ),
         filled: true,
-        fillColor: lightTeal.withOpacity(0.1),
+        fillColor: isDark ? Colors.white.withOpacity(0.05) : lightTeal.withOpacity(0.1),
       ),
     );
   }
 
   Widget _buildGenderDropdown(LanguageProvider lang) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return DropdownButtonFormField<String>(
       value: _selectedGender,
+      style: TextStyle(color: isDark ? Colors.white : Colors.black87),
+      dropdownColor: isDark ? const Color(0xFF1E1E1E) : Colors.white,
       decoration: InputDecoration(
         labelText: lang.translate('gender'),
+        labelStyle: TextStyle(color: isDark ? Colors.white70 : Colors.black54),
         prefixIcon: Icon(Icons.person, color: mediumTeal),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: lightTeal),
+          borderSide: BorderSide(color: isDark ? Colors.white24 : lightTeal),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: lightTeal),
+          borderSide: BorderSide(color: isDark ? Colors.white24 : lightTeal),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(color: mediumTeal, width: 2),
         ),
         filled: true,
-        fillColor: lightTeal.withOpacity(0.1),
+        fillColor: isDark ? Colors.white.withOpacity(0.05) : lightTeal.withOpacity(0.1),
       ),
       items: ['Male', 'Female', 'Other'].map((gender) {
         return DropdownMenuItem(
           value: gender,
-          child: Text(gender),
+          child: Text(gender, style: TextStyle(color: isDark ? Colors.white : Colors.black87)),
         );
       }).toList(),
       onChanged: (value) {

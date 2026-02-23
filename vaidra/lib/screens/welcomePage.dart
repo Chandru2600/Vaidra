@@ -40,7 +40,11 @@ class _WelcomePageState extends State<WelcomePage> with TickerProviderStateMixin
     super.dispose();
   }
 
-        final isDark = themeInstance.brightness == Brightness.dark;
+  @override
+  Widget build(BuildContext context) {
+    var themeInstance = Theme.of(context);
+    var lang = Provider.of<LanguageProvider>(context);
+    final isDark = themeInstance.brightness == Brightness.dark;
         if (lang.isLoading) {
           return Scaffold(
             backgroundColor: isDark ? const Color(0xFF121212) : const Color(0xFFE9F5EF),
@@ -201,7 +205,5 @@ class _WelcomePageState extends State<WelcomePage> with TickerProviderStateMixin
             ),
           ),
         );
-      },
-    );
   }
 }

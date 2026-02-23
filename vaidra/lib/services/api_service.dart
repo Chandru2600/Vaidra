@@ -8,9 +8,7 @@ class ApiService {
   
   // Development URLs for testing
   static String get _devUrl {
-    if (kIsWeb) return 'http://localhost:8000';
-    if (defaultTargetPlatform == TargetPlatform.android) return 'http://10.0.2.2:8000';
-    return 'http://localhost:8000';
+    return productionUrl;
   }
   
   // Automatically use production URL in release builds
@@ -59,6 +57,9 @@ class ApiService {
     _dio.options.baseUrl = baseUrl;
     try {
       String fileName = file.name;
+      if (!fileName.contains('.')) {
+        fileName += '.jpg';
+      }
       
       // For Web, we must read bytes. For Mobile, path works but bytes also work and are safer context-wise here.
       // Actually Dio supports XFile or bytes.

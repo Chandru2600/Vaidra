@@ -12,6 +12,8 @@ import 'package:vaidra/screens/historyPage.dart';
 import 'screens/help_support_page.dart';
 import 'screens/privacy_policy_page.dart';
 import 'screens/terms_service_page.dart';
+import 'screens/language_provider.dart';
+import 'providers/theme_provider.dart';
 
 void main() {
   runApp(
