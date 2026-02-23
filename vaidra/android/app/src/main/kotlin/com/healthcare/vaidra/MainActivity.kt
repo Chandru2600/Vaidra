@@ -1,4 +1,4 @@
-package com.example.vaidra
+package com.healthcare.vaidra
 
 import io.flutter.embedding.android.FlutterActivity
 
