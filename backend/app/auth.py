@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
+from sqlalchemy import func
 from app.db import get_db
 from app import models, schemas, utils
 from fastapi.security import OAuth2PasswordRequestForm
@@ -9,14 +10,21 @@ router = APIRouter(prefix="/auth", tags=["auth"])
 
 @router.post("/register", status_code=201)
 def register(user: schemas.UserCreate, db: Session = Depends(get_db)):
-    existing = db.query(models.User).filter(models.User.email == user.email).first()
+    email_clean = user.email.strip().lower()
+    if not email_clean or "@" not in email_clean:
+        raise HTTPException(status_code=400, detail="A valid email is required")
+    if len(user.password) < 6:
+        raise HTTPException(status_code=400, detail="Password must be at least 6 characters")
+
+    existing = db.query(models.User).filter(func.lower(models.User.email) == email_clean).first()
     if existing:
         raise HTTPException(status_code=400, detail="Email already registered")
+    
     hashed = utils.get_password_hash(user.password)
     u = models.User(
-        email=user.email, 
+        email=email_clean, 
         hashed_password=hashed, 
-        name=user.name,
+        name=user.name.strip() if user.name else None,
         age=user.age,
         gender=user.gender,
         conditions=user.conditions,
@@ -30,7 +38,8 @@ def register(user: schemas.UserCreate, db: Session = Depends(get_db)):
 
 @router.post("/login", response_model=schemas.Token)
 def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
-    user = db.query(models.User).filter(models.User.email == form_data.username).first()
+    username_clean = form_data.username.strip().lower()
+    user = db.query(models.User).filter(func.lower(models.User.email) == username_clean).first()
     if not user or not utils.verify_password(form_data.password, user.hashed_password):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
     token = utils.create_access_token(user.id)

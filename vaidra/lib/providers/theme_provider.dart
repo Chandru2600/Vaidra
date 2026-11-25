@@ -14,10 +14,15 @@ class ThemeProvider extends ChangeNotifier {
   
   // Load saved theme preference
   Future<void> _loadThemePreference() async {
-    final prefs = await SharedPreferences.getInstance();
-    _isDarkMode = prefs.getBool('isDarkMode') ?? false;
-    _isInitialized = true;
-    notifyListeners();
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      _isDarkMode = prefs.getBool('isDarkMode') ?? false;
+    } catch (e) {
+      debugPrint('Failed to load theme preference: $e');
+    } finally {
+      _isInitialized = true;
+      notifyListeners();
+    }
   }
   
   // Toggle dark mode

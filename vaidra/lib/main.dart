@@ -32,17 +32,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer2<LanguageProvider, ThemeProvider>(
       builder: (context, languageProvider, themeProvider, child) {
-        // Wait for theme to be initialized before building the app
-        if (!themeProvider.isInitialized) {
-          return MaterialApp(
-            home: Scaffold(
-              body: Center(
-                child: CircularProgressIndicator(),
-              ),
-            ),
-          );
-        }
-        
         return MaterialApp(
           title: 'Vaidra',
           debugShowCheckedModeBanner: false,

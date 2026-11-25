@@ -52,3 +52,7 @@ desktop.ini
 *.jks
 *.keystore
 key.properties
+
+# Cloudflare Tunnel
+cloudflared.exe
+*.exe

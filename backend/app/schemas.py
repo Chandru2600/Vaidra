@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from typing import List, Optional
 from datetime import datetime
 
@@ -38,9 +38,7 @@ class ScanResponse(BaseModel):
     result: ScanResult
     created_at: Optional[datetime] = None
     
-    class Config:
-        from_attributes = True  # Pydantic v2 (use orm_mode = True for Pydantic v1)
-
+    model_config = ConfigDict(from_attributes=True)
 
 class AssignRequest(BaseModel):
     scan_id: int

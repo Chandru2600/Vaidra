@@ -64,6 +64,7 @@ class _UploadScreenState extends State<UploadScreen> {
                     
                     // Upload
                     final res = await ApiService().uploadScan(_image!, null);
+                    if (!context.mounted) return;
                     final result = res['result'];
 
                     Navigator.push(
@@ -78,6 +79,7 @@ class _UploadScreenState extends State<UploadScreen> {
                                 warnings: result['warnings'] ?? [],
                             )));
                   } catch (e) {
+                      if (!context.mounted) return;
                       String errorMessage = e.toString();
                       if (errorMessage.contains("429")) {
                         errorMessage = "Server busy (Rate Limit). Please wait a moment.";

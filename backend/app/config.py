@@ -1,4 +1,4 @@
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import field_validator
 
 class Settings(BaseSettings):
@@ -20,11 +20,13 @@ class Settings(BaseSettings):
     @field_validator("DATABASE_URL", mode="before")
     @classmethod
     def fix_postgres_url(cls, v: str) -> str:
-        if v.startswith("postgres://"):
+        if isinstance(v, str) and v.startswith("postgres://"):
             return v.replace("postgres://", "postgresql://", 1)
         return v
 
-    class Config:
-        env_file = (".env", "../.env", "../../.env")
+    model_config = SettingsConfigDict(
+        env_file=(".env", "../.env", "../../.env"),
+        extra="ignore"
+    )
 
 settings = Settings()

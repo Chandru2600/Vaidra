@@ -3,22 +3,40 @@ import 'package:dio/dio.dart';
 import 'package:image_picker/image_picker.dart'; // For XFile
 
 class ApiService {
-  // Production backend on Render
-  static const String productionUrl = 'https://vaidra-backend.onrender.com';
+  // Live Public Backend URL for testing on mobile
+  static const String productionUrl = 'https://imprudent-overcome-turbofan.ngrok-free.dev';
   
-  // Development URLs for testing
+  // Development URLs
   static String get _devUrl {
-    return productionUrl;
+    if (kIsWeb) {
+      return ''; // Relative to the serving host
+    }
+    switch (defaultTargetPlatform) {
+      case TargetPlatform.android:
+        // Use the live public tunnel so any Android phone connects
+        return productionUrl;
+      case TargetPlatform.windows:
+      case TargetPlatform.linux:
+      case TargetPlatform.macOS:
+      default:
+        return 'http://127.0.0.1:8000';
+    }
   }
   
-  // Automatically use production URL in release builds
-  static String get baseUrl => kReleaseMode ? productionUrl : _devUrl;
+  // Automatically use production URL on mobile devices
+  static String get baseUrl => (!kIsWeb && defaultTargetPlatform == TargetPlatform.android) ? productionUrl : _devUrl;
 
   static final ApiService _instance = ApiService._internal();
   factory ApiService() => _instance;
   ApiService._internal();
 
-  final Dio _dio = Dio();
+  final Dio _dio = Dio(BaseOptions(
+    connectTimeout: const Duration(seconds: 20),
+    receiveTimeout: const Duration(seconds: 40),
+    headers: {
+      'ngrok-skip-browser-warning': 'true',
+    },
+  ));
   String? _token;
 
   void setToken(String token) {
@@ -30,7 +48,7 @@ class ApiService {
     _dio.options.baseUrl = baseUrl; // Ensure base URL is set
     try {
       final response = await _dio.post('/auth/login', data: {
-        'username': email, 
+        'username': email.trim().toLowerCase(), 
         'password': password,
       }, options: Options(contentType: Headers.formUrlEncodedContentType));
       
@@ -38,6 +56,18 @@ class ApiService {
       setToken(data['access_token']);
       return data;
     } catch (e) {
+      if (e is DioException) {
+        if (e.response?.statusCode == 401) {
+          throw Exception('Incorrect email or password. Please check your credentials.');
+        }
+        if (e.type == DioExceptionType.connectionTimeout || 
+            e.type == DioExceptionType.connectionError ||
+            e.type == DioExceptionType.receiveTimeout) {
+          throw Exception('Cannot connect to server ($baseUrl). Make sure the backend is running.');
+        }
+        final detail = e.response?.data is Map ? e.response?.data['detail'] : null;
+        throw Exception(detail ?? 'Server error (${e.response?.statusCode})');
+      }
       throw Exception('Login failed: ${e.toString()}');
     }
   }
@@ -48,7 +78,10 @@ class ApiService {
       final response = await _dio.post('/auth/register', data: userData);
       return response.data;
     } catch (e) {
-      throw Exception('Registration failed: ${e.toString()}');
+      if (e is DioException && e.response?.statusCode == 400) {
+        throw Exception(e.response?.data['detail'] ?? 'Registration failed: Invalid details');
+      }
+      throw Exception('Registration failed: Connection issue or server error.');
     }
   }
 
@@ -60,10 +93,6 @@ class ApiService {
       if (!fileName.contains('.')) {
         fileName += '.jpg';
       }
-      
-      // For Web, we must read bytes. For Mobile, path works but bytes also work and are safer context-wise here.
-      // Actually Dio supports XFile or bytes.
-      // Safest cross-platform way with Dio usually involves bytes or MultipartFile.fromBytes
       
       final bytes = await file.readAsBytes();
       
@@ -78,6 +107,7 @@ class ApiService {
       throw Exception('Upload failed: ${e.toString()}');
     }
   }
+
   Future<List<dynamic>> fetchRecentScans() async {
     _dio.options.baseUrl = baseUrl;
     try {
