@@ -184,6 +184,22 @@ class _WelcomePageState extends State<WelcomePage> with TickerProviderStateMixin
                               label: Text(lang.translate('continue_google'), style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: isDark ? Colors.white : mediumTeal)),
                             ),
                           ),
+                          const SizedBox(height: 16),
+                          SizedBox(
+                            width: double.infinity,
+                            height: 56,
+                            child: ElevatedButton.icon(
+                              onPressed: () => Navigator.pushNamed(context, '/emergency'),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.red.shade700,
+                                foregroundColor: Colors.white,
+                                elevation: 0,
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(28)),
+                              ),
+                              icon: const Icon(Icons.emergency, size: 22),
+                              label: const Text('Emergency — no login needed', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+                            ),
+                          ),
                         ],
                       ),
                     ),

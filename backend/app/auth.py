@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from sqlalchemy import func
 from app.db import get_db
-from app import models, schemas, utils
+from app import models, roles, schemas, utils
 from fastapi.security import OAuth2PasswordRequestForm
 from fastapi import Body
 
@@ -34,6 +34,9 @@ def register(user: schemas.UserCreate, db: Session = Depends(get_db)):
     db.add(u)
     db.commit()
     db.refresh(u)
+    # Admin promotion (checklist §9): if this email matches
+    # VAIDRA_ADMIN_EMAIL, the account becomes ADMIN.
+    roles.maybe_promote_admin(u, db)
     return {"id": u.id, "email": u.email, "name": u.name}
 
 @router.post("/login", response_model=schemas.Token)
@@ -42,6 +45,9 @@ def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depend
     user = db.query(models.User).filter(func.lower(models.User.email) == username_clean).first()
     if not user or not utils.verify_password(form_data.password, user.hashed_password):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
+    # Admin promotion (checklist §9): if this email matches
+    # VAIDRA_ADMIN_EMAIL, the account becomes ADMIN.
+    roles.maybe_promote_admin(user, db)
     token = utils.create_access_token(user.id)
     return {"access_token": token, "token_type": "bearer"}
 

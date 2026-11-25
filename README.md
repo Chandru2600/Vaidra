@@ -90,6 +90,15 @@ Patients often struggle to identify skin conditions and need quick preliminary g
 - Hindi (हिंदी)
 - Easy language switching
 
+### 🆘 Emergency & First-Aid (new)
+- **Emergency Mode** — one-tap call to 112 (plus 108/102), no login, no paywall
+- **AI First-Aid Assistant** — describe what happened; danger signs escalate to 112 immediately, never delayed to ask more questions
+- **Verified First-Aid Knowledge Base** — 13 standard guides (bleeding, burns, choking, CPR, fracture, snake bite, seizure…), general information only, no medication names or dosages; available offline in the app
+- **LifeCard** — blood group, allergies, conditions, medications, emergency contacts, preferred hospital; permission-controlled sharing via a token link (medical data is never put in a QR code)
+- **Emergency contacts** — saved contacts, one-tap call from the Emergency screen
+- **Nearby hospitals & pharmacies** — real listings from OpenStreetMap, clearly marked unverified; hours, beds and availability are never invented
+- **Safety wording** — the AI gives preliminary guidance, never a diagnosis; every result carries an uncertainty statement and a disclaimer; all AI decisions are audit-logged
+
 ---
 
 ## 🛠 Technology Stack
@@ -179,7 +188,7 @@ Patients often struggle to identify skin conditions and need quick preliminary g
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/vaidra.git
+git clone https://github.com/Chandru2600/Vaidra.git
 cd vaidra
 ```
 
@@ -550,7 +559,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+- **Chandrashekhar M Loni** - *Initial work* - [Chandru2600](https://github.com/Chandru2600)
 
 ---
 

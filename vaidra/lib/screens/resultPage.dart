@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:url_launcher/url_launcher.dart' as launcher;
+import 'package:vaidra/services/tts_service.dart';
 import 'package:vaidra/screens/uploadPage.dart';
 import 'package:vaidra/screens/welcomePage.dart';
 import 'package:vaidra/screens/loginPage.dart';
@@ -15,6 +16,9 @@ class ResultsScreen extends StatelessWidget {
   final String severity;
   final List<dynamic> steps;
   final List<dynamic> warnings;
+  // Optional safety text from the backend, shown when present.
+  final String? disclaimer;
+  final String? uncertainty;
 
   ResultsScreen({
     required this.imageFile,
@@ -23,6 +27,8 @@ class ResultsScreen extends StatelessWidget {
     required this.severity,
     required this.steps,
     required this.warnings,
+    this.disclaimer,
+    this.uncertainty,
   });
 
   Future<void> _call(String urlOrPhone) async {
@@ -49,16 +55,60 @@ class ResultsScreen extends StatelessWidget {
     }
   }
 
+  String _speakText() {
+    final parts = <String>[
+      'Possible condition: $condition.',
+      'Confidence: $confidence percent.',
+      'Severity: $severity.',
+    ];
+    if (steps.isNotEmpty) {
+      parts.add('First aid: ${steps.map((s) => s.toString()).join('. ')}');
+    }
+    return parts.join(' ');
+  }
+
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
       backgroundColor: isDark ? const Color(0xFF121212) : null,
-      appBar: AppBar(title: Text(tr("results"))),
+      appBar: AppBar(
+        title: Text(tr("results")),
+        actions: [
+          SpeakButton(text: _speakText()),
+        ],
+      ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16),
         child: Column(
           children: [
+            // Safety wording: this is preliminary guidance, never a diagnosis.
+            Card(
+              color: isDark ? Colors.amber.shade900.withOpacity(0.25) : Colors.amber.shade50,
+              child: ListTile(
+                leading: const Icon(Icons.warning_amber_rounded, color: Colors.amber),
+                title: const Text(
+                  'Preliminary guidance — not a diagnosis',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text(
+                  disclaimer ??
+                      'This is AI-generated general information only. It may be wrong '
+                      'and it is not a medical diagnosis. See a qualified doctor for '
+                      'a diagnosis. In an emergency call 112.',
+                ),
+              ),
+            ),
+            if (uncertainty != null && uncertainty!.isNotEmpty)
+              Card(
+                color: isDark ? const Color(0xFF1E1E1E) : null,
+                child: ListTile(
+                  leading: const Icon(Icons.info_outline),
+                  title: const Text('About this result'),
+                  subtitle: Text(uncertainty!),
+                ),
+              ),
+            const SizedBox(height: 10),
             Card(
               color: isDark ? const Color(0xFF1E1E1E) : null,
               child: Column(
@@ -78,7 +128,7 @@ class ResultsScreen extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: Text(condition, style: TextStyle(color: isDark ? Colors.white : null)),
+                    title: Text('Possible condition: $condition', style: TextStyle(color: isDark ? Colors.white : null)),
                     subtitle: Text("${tr("confidence")}: $confidence%", style: TextStyle(color: isDark ? Colors.white70 : null)),
                     trailing: Chip(
                       label: Text("${tr('severity')}: $severity"),
@@ -168,9 +218,9 @@ class ResultsScreen extends StatelessWidget {
             ),
             SizedBox(height: 10),
             ElevatedButton.icon(
-              onPressed: () => _call("9999999999"),
-              icon: Icon(Icons.phone),
-              label: Text(tr("call_doctor")),
+              onPressed: () => Navigator.pushNamed(context, '/emergency'),
+              icon: const Icon(Icons.phone),
+              label: const Text('Emergency help'),
             )
           ],
         ),

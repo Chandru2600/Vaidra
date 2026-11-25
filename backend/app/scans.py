@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, UploadFile, File, HTTPException, status,
 from sqlalchemy.orm import Session
 from app.db import get_db
 from app import models, schemas, utils
-from app.ai_client import analyze_image
+from app.ai_client import analyze_image, PROMPT_VERSION, MODEL_NAME, DISCLAIMER
 from app.storage import upload_to_storage
 from app.config import settings
 import shutil, os, datetime, uuid
@@ -48,6 +48,34 @@ def get_recent_scans(
             created_at=scan.created_at
         ) for scan in scans
     ]
+
+@router.get("/{scan_id}", response_model=schemas.ScanResponse)
+def get_scan(
+    scan_id: int,
+    db: Session = Depends(get_db),
+    current_user_id: int = Depends(utils.get_current_user_id),
+):
+    """One scan by id — owner only, or the doctor it is assigned to.
+
+    Needed for the Flutter history-detail screen. Other users get 404
+    (no existence leak); unauthenticated requests get 401.
+    """
+    scan = db.query(models.Scan).filter(models.Scan.id == scan_id).first()
+    if not scan or (
+        scan.user_id != current_user_id and scan.assigned_to != current_user_id
+    ):
+        raise HTTPException(status_code=404, detail="Scan not found")
+    return schemas.ScanResponse(
+        id=scan.id,
+        result=schemas.ScanResult(
+            condition=scan.condition or "Unknown",
+            confidence=scan.confidence or 0.0,
+            severity=scan.severity if scan.severity else "MINOR",
+            steps=scan.steps.split("|") if scan.steps else [],
+            warnings=scan.warnings.split("|") if scan.warnings else [],
+        ),
+        created_at=scan.created_at,
+    )
 
 @router.post("/analyze", response_model=schemas.ScanResponse)
 def analyze(
@@ -119,6 +147,11 @@ def analyze(
 
     steps = ai_res.get("steps") or ai_res.get("advice") or []
     warnings = ai_res.get("warnings") or []
+    # Safety guardrails (§6): preliminary guidance, never a diagnosis.
+    disclaimer = ai_res.get("disclaimer") or DISCLAIMER
+    uncertainty = ai_res.get("uncertainty") or "high"
+    if uncertainty not in ("low", "medium", "high"):
+        uncertainty = "high"
 
     # --- Security: Prevent IDOR (Insecure Direct Object Reference) ---
     # Only associate scan with a user ID if the user is authenticated with that ID
@@ -138,6 +171,17 @@ def analyze(
     db.commit()
     db.refresh(scan)
 
+    # Audit log (§6): every AI analysis is recorded for safety review.
+    db.add(models.AiInteractionLog(
+        user_id=effective_user_id,
+        scan_id=scan.id,
+        model=MODEL_NAME,
+        prompt_version=PROMPT_VERSION,
+        result_summary=condition,
+        escalation=severity_str,
+    ))
+    db.commit()
+
     return schemas.ScanResponse(
         id=scan.id,
         result=schemas.ScanResult(
@@ -145,7 +189,9 @@ def analyze(
             confidence=scan.confidence or 0.0,
             severity=scan.severity if scan.severity else "MINOR",
             steps=scan.steps.split("|") if scan.steps else [],
-            warnings=scan.warnings.split("|") if scan.warnings else []
+            warnings=scan.warnings.split("|") if scan.warnings else [],
+            disclaimer=disclaimer,
+            uncertainty=uncertainty,
         ),
         created_at=scan.created_at
     )

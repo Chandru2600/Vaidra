@@ -342,6 +342,14 @@ class _ProfilePageState extends State<ProfilePage>
                   lang.translate('terms_service'), null,
                   hasArrow: true,
                   onTap: () => Navigator.pushNamed(context, '/terms')),
+              _buildMenuItem(Icons.subscriptions_outlined,
+                  'Subscriptions', null,
+                  hasArrow: true,
+                  onTap: () => Navigator.pushNamed(context, '/subscriptions')),
+              _buildMenuItem(Icons.business_outlined,
+                  'Partner registration', null,
+                  hasArrow: true,
+                  onTap: () => Navigator.pushNamed(context, '/partner')),
             ]),
             OutlinedButton(
   onPressed: () {

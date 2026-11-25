@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'language_provider.dart';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
+import 'package:url_launcher/url_launcher.dart' as launcher;
 import 'package:vaidra/services/api_service.dart';
 import 'package:vaidra/screens/resultPage.dart';
 
@@ -122,6 +123,8 @@ class _HomePageState extends State<HomePage> {
               severity: result['severity'] ?? "Minor",
               steps: result['steps'] ?? [],
               warnings: result['warnings'] ?? [],
+              disclaimer: result['disclaimer']?.toString(),
+              uncertainty: result['uncertainty']?.toString(),
             ),
           ),
         );
@@ -290,6 +293,8 @@ class _HomePageState extends State<HomePage> {
           Expanded(child: _buildUploadTypeCard(lang, Icons.photo_camera, 'symptoms', 'affected_areas')),
         ]),
         const SizedBox(height: 32),
+        _buildServicesSection(lang),
+        const SizedBox(height: 32),
         Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Text(lang.translate('recent_uploads'), style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: isDark ? Colors.white : textDark)),
           TextButton(onPressed: () => Navigator.pushNamed(context, '/history'),
@@ -355,6 +360,146 @@ class _HomePageState extends State<HomePage> {
         Text(lang.translate('upload_first_image'), textAlign: TextAlign.center, style: TextStyle(fontSize: 14, color: isDark ? Colors.white60 : Colors.grey.shade500)),
       ]),
     );
+  }
+
+  // ---- Home dashboard: the 12 sections from the Vaidra checklist ----
+  // Tiles with a working destination link to it. Tiles with no backend yet
+  // are labelled "Coming soon" and show no fake data or fake availability.
+  Widget _buildServicesSection(LanguageProvider lang) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final services = <Map<String, dynamic>>[
+      {'key': 'emergency', 'icon': Icons.emergency, 'label': 'Emergency Assistance', 'soon': false},
+      {'key': 'ai_assistant', 'icon': Icons.smart_toy, 'label': 'AI First-Aid Assistant', 'soon': false},
+      {'key': 'hospitals', 'icon': Icons.local_hospital, 'label': 'Find Hospitals', 'soon': false},
+      {'key': 'shops', 'icon': Icons.local_pharmacy, 'label': 'Find Medical Shops', 'soon': false},
+      {'key': 'doctors', 'icon': Icons.person_search, 'label': 'Find Doctors', 'soon': false},
+      {'key': 'ambulances', 'icon': Icons.airport_shuttle, 'label': 'Find Ambulances', 'soon': false},
+      {'key': 'blood_banks', 'icon': Icons.bloodtype, 'label': 'Find Blood Banks', 'soon': false},
+      {'key': 'diagnostics', 'icon': Icons.biotech, 'label': 'Find Diagnostic Centres', 'soon': false},
+      {'key': 'lifecard', 'icon': Icons.contact_emergency, 'label': 'My LifeCard', 'soon': false},
+      {'key': 'family_relay', 'icon': Icons.family_restroom, 'label': 'Family Relay', 'soon': false},
+      {'key': 'firstaid', 'icon': Icons.menu_book, 'label': 'First-Aid Learning', 'soon': false},
+      {'key': 'history', 'icon': Icons.history, 'label': 'My Healthcare History', 'soon': false},
+    ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text('Services', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: isDark ? Colors.white : textDark)),
+        const SizedBox(height: 16),
+        GridView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
+            childAspectRatio: 0.85,
+            crossAxisSpacing: 12,
+            mainAxisSpacing: 12,
+          ),
+          itemCount: services.length,
+          itemBuilder: (context, index) {
+            final service = services[index];
+            return _buildServiceTile(
+              service['icon'] as IconData,
+              service['label'] as String,
+              service['soon'] as bool,
+              () => _handleServiceTap(service['key'] as String),
+            );
+          },
+        ),
+      ],
+    );
+  }
+
+  Widget _buildServiceTile(IconData icon, String label, bool comingSoon, VoidCallback onTap) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 2))],
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(icon, color: comingSoon ? Colors.grey : primaryGreen, size: 30),
+            const SizedBox(height: 8),
+            Text(
+              label,
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: isDark ? Colors.white : textDark),
+            ),
+            if (comingSoon) ...[
+              const SizedBox(height: 6),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                decoration: BoxDecoration(color: Colors.amber.shade100, borderRadius: BorderRadius.circular(8)),
+                child: Text('Coming soon', style: TextStyle(fontSize: 10, fontWeight: FontWeight.w600, color: Colors.amber.shade800)),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _handleServiceTap(String key) {
+    switch (key) {
+      case 'emergency':
+        Navigator.pushNamed(context, '/emergency');
+        break;
+      case 'hospitals':
+        Navigator.pushNamed(context, '/discover-hospitals');
+        break;
+      case 'shops':
+        Navigator.pushNamed(context, '/discover-pharmacies');
+        break;
+      case 'doctors':
+        _openMapsSearch('doctors near me');
+        break;
+      case 'lifecard':
+        Navigator.pushNamed(context, '/lifecard');
+        break;
+      case 'firstaid':
+        Navigator.pushNamed(context, '/first-aid');
+        break;
+      case 'history':
+        Navigator.pushNamed(context, '/history');
+        break;
+      case 'ai_assistant':
+        // The assistant lives on the Emergency page (describe what happened).
+        Navigator.pushNamed(context, '/emergency');
+        break;
+      case 'ambulances':
+        Navigator.pushNamed(context, '/discover-ambulances');
+        break;
+      case 'blood_banks':
+        Navigator.pushNamed(context, '/discover-blood-banks');
+        break;
+      case 'diagnostics':
+        Navigator.pushNamed(context, '/discover-diagnostics');
+        break;
+      case 'family_relay':
+        Navigator.pushNamed(context, '/family');
+        break;
+    }
+  }
+
+  Future<void> _openMapsSearch(String query) async {
+    final uri = Uri.parse(
+      'https://www.google.com/maps/search/?api=1&query=${Uri.encodeComponent(query)}',
+    );
+    if (await launcher.canLaunchUrl(uri)) {
+      await launcher.launchUrl(uri, mode: launcher.LaunchMode.externalApplication);
+    } else if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Could not open Maps')),
+      );
+    }
   }
 
   String _formatDate(DateTime date) {

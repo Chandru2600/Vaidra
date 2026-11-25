@@ -6,6 +6,16 @@ from app.db import engine, Base
 from app.auth import router as auth_router
 from app.scans import router as scans_router
 from app.doctor import router as doctor_router
+from app.first_aid import router as first_aid_router
+from app.emergency import router as emergency_router
+from app.emergency_contacts import router as emergency_contacts_router
+from app.lifecard import router as lifecard_router
+from app.discover import router as discover_router
+from app.partners import router as partners_router, admin_router as partners_admin_router
+from app.enquiries import router as enquiries_router
+from app.family import router as family_router
+from app.voice import router as voice_router
+from app.subscriptions import router as subscriptions_router
 import os
 
 # create tables
@@ -13,8 +23,8 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="Vaidra AI Healthcare API",
-    description="Instant skin condition analysis using Google Gemini Multimodal AI",
-    version="1.0.5"
+    description="Preliminary skin-condition guidance using Google Gemini Multimodal AI — not a diagnosis. Emergency first-aid guides, triage, LifeCard, nearby hospital/pharmacy discovery, partner portals, Family Relay and subscriptions.",
+    version="1.2.0"
 )
 
 from fastapi.middleware.cors import CORSMiddleware
@@ -30,6 +40,17 @@ app.add_middleware(
 app.include_router(auth_router)
 app.include_router(scans_router)
 app.include_router(doctor_router)
+app.include_router(first_aid_router)
+app.include_router(emergency_router)
+app.include_router(emergency_contacts_router)
+app.include_router(lifecard_router)
+app.include_router(discover_router)
+app.include_router(partners_router)
+app.include_router(partners_admin_router)
+app.include_router(enquiries_router)
+app.include_router(family_router)
+app.include_router(voice_router)
+app.include_router(subscriptions_router)
 
 # Mount Flutter Web App if build exists
 web_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../vaidra/build/web"))
@@ -87,7 +108,7 @@ def root():
             Server Live & Reachable
         </div>
         <h1>Vaidra AI Healthcare</h1>
-        <p>Instant skin condition diagnosis with Gemini Multimodal AI. Works on any phone or browser.</p>
+        <p>Preliminary skin-condition guidance with Gemini Multimodal AI — not a diagnosis. Works on any phone or browser.</p>
         
         <div class="actions">
             <a href="/app/" class="btn-launch">🌐 1. Open App in Phone Browser (Instant, No Install)</a>
